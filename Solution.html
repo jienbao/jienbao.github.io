@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>解决方案</title>
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/public.js"></script>
+	</head>
+	<style>
+		.sys_tit {
+			text-align: initial;
+			height: 42px;
+			line-height: 42px;
+			color: rgba(51, 51, 51, 1);
+			font-size: 22px;
+			width: 1200px;
+			margin: 0 auto;
+			font-weight: 600;
+		}
+
+		.solve {
+			text-align: initial;
+		}
+
+		.pro_ban {
+			/* width: 33.3%; */
+			background: url(images/programme.png);
+			/* height: 246px; */
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: 100% 100%;
+			height: 320px;
+		}
+
+		.position {
+			display: flex;
+			color: #fff;
+			height: 315px;
+			align-items: end;
+			width: 63%;
+			margin: 0 auto;
+		}
+
+		.images {
+			/* width: 33.3%; */
+			background: url(images/DevelopmentCore1.png);
+			/* height: 246px; */
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: 100% 100%;
+			/* width: 560px; */
+			height: 250px;
+			display: flex;
+			align-items: flex-end;
+			justify-content: flex-end;
+		}
+
+		.indexs .index_tabs {
+			width: 1200px;
+			height: 90px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin: 0 auto;
+		}
+
+		.indexs .index_tabs a {
+			/* height: 100%; */
+			line-height: 50px;
+			display: flex;
+			color: #04060D;
+			text-align: center;
+			align-items: center;
+		}
+
+		.index .index_tabs a:hover {
+			color: ##04060D !important;
+			font-weight: 600;
+			border-bottom: 3px solid #ff7b00;
+		}
+
+		.curs {
+			font-weight: 600;
+			border-bottom: 3px solid #ff7b00;
+		}
+
+		.index_conts {
+			width: 100%;
+		}
+
+		.index_conts .lists {
+			display: none;
+			text-align: center;
+			padding: 10px;
+		}
+
+		.selecteds {
+			display: block !important;
+		}
+
+		.data {
+			width: 53.5%;
+			height: 335px;
+		}
+
+		.data_img {
+			height: 335px;
+			width: 100%;
+		}
+
+		.conters {
+			height: 335px;
+			background-color: #fff;
+			padding: 0 50px;
+			line-height: 23px;
+			width: 38%;
+		}
+
+		.introduction {
+			font-size: 20px;
+			font-weight: 600;
+			padding-top: 50px;
+		}
+
+		.conters_1 {
+			font-size: 15px;
+			text-align: initial;
+		}
+
+
+		.chars {
+			background-color: #fff;
+			padding: 0 0 55px;
+			width: 1200px;
+			margin: 0 auto;
+		}
+
+		.bk_i {
+			display: flex;
+			margin: 20px 30px;
+		}
+
+		.cooperation {
+			font-weight: 600;
+			font-size: 16px;
+			color: #fff;
+			height: 32px;
+			display: flex;
+			align-items: center;
+		}
+
+		.xian {
+			width: 2px;
+			height: 20px;
+			background: #fff;
+			margin-left: 20px;
+			margin-top: 7px;
+		}
+
+		.logo_img {
+			padding-left: 20px;
+			height: 32px;
+		}
+
+		.img_img {
+			width: 128px;
+			height: 32px;
+		}
+
+		.Colored {
+			/* width: 560px; */
+			height: 170px;
+			background: #F7F7F7;
+			text-align: justify;
+		}
+
+		.EastChina {
+			font-size: 20px;
+			font-weight: 600;
+			padding: 20px 0px 10px 30px;
+			color: #161B2E;
+		}
+
+		.content_con {
+			font-size: 14px;
+			padding: 10px 28px;
+			line-height: 20px;
+		}
+
+		.right {
+			display: flex;
+			align-items: center;
+			background: aliceblue;
+			/* margin-left: 30px; */
+			/* width: 440px; */
+			height: 86px;
+			background: #F7F7F7;
+			border-radius: 5px;
+			/* margin-bottom: 25px; */
+		}
+
+		.rights {
+			width: 43.4%;
+			height: 420px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			margin-left: auto;
+		}
+
+		.CompanyName {
+			padding-left: 25px;
+			font-size: 15px;
+			font-weight: 600;
+			color: #161B2E;
+		}
+
+		.right_conter {
+			padding-left: 25px;
+		}
+
+		.input {
+			width: 185px;
+			height: 38px;
+			background: #FFFFFF;
+			box-shadow: 0 0 22px 0 #575d6d2e;
+			border-radius: 6px;
+		}
+
+		.Answer {
+			text-align: center;
+			font-size: 12px;
+			color: #161B2E;
+		}
+
+		.inputs {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-top: 40px;
+		}
+
+		.button {
+			color: #fff;
+			background-color: #FF7B00;
+			height: 38px;
+			line-height: 38px;
+			font-size: 10px;
+			width: 80px;
+			text-align: center;
+		}
+
+		.contents {
+			padding: 35px 0 40px;
+		}
+
+		.pro_info1 {
+			text-align: center;
+			line-height: 22px;
+			opacity: 0.77;
+			color: #04060D;
+			width: 1200px;
+			font-size: 15px;
+			margin: 30px auto;
+		}
+
+		.index .index_tab {
+			width: 42%;
+			display: flex;
+			justify-content: space-between;
+			flex-direction: column;
+			height: 415px;
+			text-align: justify;
+			padding-left: 36px;
+		}
+
+		.index .index_tab a {
+			line-height: 85px;
+			height: 85px;
+			color: #333;
+			font-size: 17px;
+			padding-left: 25px;
+			font-weight: 600;
+			border-radius: 4px;
+			background-color: #F7F7F7;
+		}
+
+		.cur {
+			color: #000 !important;
+			background-color: #FFFFFF !important;
+			box-shadow: 0 0 22px 0 #575d6d2e !important;
+
+		}
+
+		.index_cont {
+			width: 53.5%;
+		}
+
+		.index_cont .list {
+			display: none;
+			text-align: center;
+		}
+
+		.selected {
+			display: block !important;
+		}
+
+		.pro_tit {
+			margin: auto;
+			margin-bottom: 0;
+			text-align: center;
+			height: 42px;
+			line-height: 42px;
+			color: #04060D;
+			font-size: 26px;
+			font-weight: 600;
+		}
+
+		.pro_box {
+			margin-top: 20px;
+			width: 100%;
+			overflow: hidden;
+			height: 450px;
+		}
+
+		.companys {
+			display: flex;
+			align-items: center;
+		}
+
+		.company {
+			padding-left: 25px;
+		}
+
+		.companylogo {
+			width: 160px;
+			height: 30px;
+		}
+	</style>
+	<body>
+		<div class="topbox">
+			<div class="head clearfloat" style="width: 1200px;">
+				<div class="logo clearfloat" style="width: 15%;"> <em></em> </div>
+				<div class="nav" style="width: 60%;">
+					<ul class="clearfloat">
+						<li><a href="index.html">首页</a></li>
+						<li><a href="about.html">公司简介</a></li>
+						<li><a href="product1.html">普讯产品</a></li>
+						<li class="active"><a href="Solution.html">解决方案 </a>
+							<div class="nav_down">
+								<p><a href="">火灾自动报警系统解决方案</a></p>
+								<p><a href="">电气火灾监控系统解决方案</a></p>
+								<p><a href="">可燃气体监控系统解决方案</a></p>
+								<p><a href="">消防给水监测系统解决方案</a></p>
+								<p><a href="">气体灭火控制系统解决方案</a></p>
+								<p><a href="">防火门监控系统解决方案</a></p>
+								<p><a href="">消防视频监控系统解决方案</a></p>
+								<p><a href="">消防巡检系统解决方案</a></p>
+								<p><a href="">应急疏散系统解决方案</a></p>
+							</div>
+						</li>
+						<li><a href="partners.html">合作伙伴</a></li>
+						<li><a href="contactUs.html">联系我们</a></li>
+						<li><a href="recruit.html">诚聘英才</a></li>
+					</ul>
+				</div>
+				<div class="login_img" style="">
+					<img src="images/search.png" alt="">
+					<input class="login_input" placeholder="请输入关键字" type="text" style="">
+				</div>
+				<div class="login_peixun" style="">
+					<a style="color: #fff;" href="login.html">登录培训</a>
+				</div>
+			</div>
+		</div>
+		<!--top-->
+
+		<div class="wraps">
+			<div class="pro_ban">
+				<div class="pro_use clearfloat">
+					<div class="pro_le">
+						<div class="position">
+							<div class="" style="display: flex;align-items: center;">
+								<img src="images/current.png" style="width: 20px;height: 20px;" alt="">
+								<div class="" style="padding-left: 10px;">
+									所在位置： 解决方案
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--banner-->
+			<div class="main">
+				<div class="indexs">
+					<div class="index_tabs">
+						<a href="javascript:void(0);" class="curs">生产车间管理</a>
+						<a href="javascript:void(0);">生产计划管理</a>
+						<a href="javascript:void(0);">质量管理解决方案</a>
+						<a href="javascript:void(0);">智能仓储解决方案</a>
+						<a href="javascript:void(0);">智能财务解决方案</a>
+					</div>
+					<div class="index_conts">
+						<!-- 生产车间管理开始 -->
+						<div class="lists selecteds">
+
+							<!--系统结构图-->
+							<div class="char_box contents">
+								<div class="sys_tit">
+									数据智能成为生产车间的进步动力
+								</div>
+								<div class="sys_list" style="display: flex;">
+									<div class="data">
+										<img class="data_img" src="images/DevelopmentCore3.png" alt="">
+									</div>
+									<div class="conters">
+										<div class="introduction">
+											内容简介
+										</div>
+										<div class="" style="padding-top: 40px;">
+											<div class="conters_1">
+												普讯的企业发展核心为“诚信与创新”，坚持“以诚为本，开拓创新，执行高效，追求完美”的经营理念，奉行“品质、专业、准确、快速”的服务精神，积极完善集团化运作，致力于让全国的客户都能感受到普讯由内而外的革新与影响。
+											</div>
+											<div class="conters_1">
+												普讯的企业发展核心为“诚信与创新”，坚持“以诚为本，开拓创新，执行高效，追求完美”的经营理念，奉行“品质、专业、准确、快速”的服务精神，积极完善集团化运作…
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--功能特点-->
+
+							<div class="systebox">
+								<div class="solve">
+									解决方案全景
+								</div>
+								<div class="sys_tit">
+									助力生产车间管理实现数字化转型
+								</div>
+								<div class="solv_pic solve">
+									<img src="images/DevelopmentCore2.png" />
+								</div>
+							</div>
+							<!--系统结构图-->
+
+
+							<div class="char_box chars">
+								<div class="solve">
+									解决方案案例
+								</div>
+								<div class="sys_tit">
+									生产车间管理优秀公司
+								</div>
+								<div class="pro_box" style="margin-bottom: 0;">
+									<div class="index" style="display: flex;width: 1200px;margin: 20px auto;">
+										<div class="index_cont">
+											<div class="list selected">
+												<div class="" style="height: 420px;">
+													<div class="images">
+														<div class="bk_i">
+															<div class="cooperation">
+																优秀合作伙伴
+															</div>
+															<div class="xian"></div>
+															<div class="logo_img">
+																<img class="img_img" src="images/logo0.png" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="Colored">
+														<div class="EastChina">
+															华东有色
+														</div>
+														<div class="content_con">
+															企业发展核心为“诚信与创新”，坚持“以诚为本，开拓创新，执行高效，追求完美”的经营理念，奉行“品质、专业、准确、快速”的服务精神，积极完善集团化运作，致力于让全国的客户都能感受到普讯由内而外的革新与影响。
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="list">
+												<div class="" style="height: 420px;">
+													<div class="images">
+														<div class="bk_i">
+															<div class="cooperation">
+																优秀合作伙伴
+															</div>
+															<div class="xian"></div>
+															<div class="logo_img">
+																<img class="img_img" src="images/logo0.png" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="Colored">
+														<div class="EastChina">
+															华东有色
+														</div>
+														<div class="content_con">
+															企业发展核心为奉行“品质、专业、准确、快速”的服务精神，积极完善集团化运作，致力于让全国的客户都能感受到普讯由内而外的革新与影响。
+														</div>
+													</div>
+												</div>
+
+											</div>
+											<div class="list">
+												<div class="" style="height: 420px;">
+													<div class="images">
+														<div class="bk_i">
+															<div class="cooperation">
+																优秀合作伙伴
+															</div>
+															<div class="xian"></div>
+															<div class="logo_img">
+																<img class="img_img" src="images/logo0.png" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="Colored">
+														<div class="EastChina">
+															华东有色
+														</div>
+														<div class="content_con">
+															致力于让全国的客户都能感受到普讯由内而外的革新与影响。
+														</div>
+													</div>
+												</div>
+
+											</div>
+											<div class="list">
+												<div class="" style="height: 420px;">
+													<div class="images">
+														<div class="bk_i">
+															<div class="cooperation">
+																优秀合作伙伴
+															</div>
+															<div class="xian"></div>
+															<div class="logo_img">
+																<img class="img_img" src="images/logo0.png" alt="">
+															</div>
+														</div>
+													</div>
+													<div class="Colored">
+														<div class="EastChina">
+															华东有色
+														</div>
+														<div class="content_con">
+															积极完善集团化运作，致力于让全国的客户都能感受到普讯由内而外的革新与影响。
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+										<div class="index_tab">
+											<a href="javascript:void(0);" class="cur">
+												<div class="companys">
+													<img class="companylogo" src="images/companyLogo.png">
+													<div class="company">
+														字节跳动
+													</div>
+												</div>
+											</a>
+											<a href="javascript:void(0);">
+												<div class="companys">
+													<img class="companylogo" src="images/companyLogo.png">
+													<div class="company">
+														淘宝
+													</div>
+												</div>
+											</a>
+											<a href="javascript:void(0);">
+												<div class="companys">
+													<img class="companylogo" src="images/companyLogo.png">
+													<div class="company">
+														中国联通
+													</div>
+												</div>
+											</a>
+											<a href="javascript:void(0);">
+												<div class="companys">
+													<img class="companylogo" src="images/companyLogo.png">
+													<div class="company">
+														中国移动
+													</div>
+												</div>
+											</a>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 生产车间管理结束 -->
+
+						<!-- 生产计划管理开始 -->
+						<div class="lists">生产计划管理</div>
+						<!-- 生产计划管理结束 -->
+
+						<!-- 质量管理解决方案开始 -->
+						<div class="lists">质量管理解决方案</div>
+						<!-- 质量管理解决方案结束 -->
+
+						<!-- 智能仓储解决方案开始 -->
+						<div class="lists">智能仓储解决方案</div>
+						<!-- 智能仓储解决方案结束 -->
+
+						<!-- 智能财务解决方案开始 -->
+						<div class="lists">智能财务解决方案</div>
+						<!-- 智能财务解决方案结束 -->
+					</div>
+				</div>
+			</div>
+			<!--合作伙伴-->
+			<div class="reservation">
+				<div class="trialListening">
+					<div class="probation">预约免费试用</div>
+					<div class="contactInformation">留下您的姓名和联系方式，工作人员免费为您服务</div>
+				</div>
+				<div class="consultingService">
+					<input class="nameid" type="text" placeholder="您的姓名" />
+					<input class="telephoneid" type="text" placeholder="联系方式" />
+					<button class="buttonid">提交</button>
+				</div>
+			</div>
+			<!--合作伙伴-->
+
+
+
+			<div class="footerbox" style="background-image: linear-gradient(180deg, #F7F7F7 0%, #ECECEC 100%);">
+				<div class="fast_navs" style="width: 1200px;margin: 0 auto;">
+					<img src="images/logo1.png" alt="" style="width: 200px;height: 50px;">
+				</div>
+				<div class="footer clearfloat" style="width: 1200px;">
+					<div style="width: 100%;display: flex;padding-top: 20px;">
+						<div class="fast_nav">
+							<div class="fast_tit"> 公司简介 </div>
+							<div class="fast_list">
+								<p><a class="herf_a" href="tmc1.html">公司简介</a></p>
+								<p><a class="herf_a" href="solve.html">视频简介</a></p>
+							</div>
+						</div>
+						<div class="fast_nav">
+							<div class="fast_tit"> 普讯产品 </div>
+							<div class="fast_list">
+								<p><a class="herf_a" href="tmc1.html">钢贸宝</a></p>
+								<p><a class="herf_a" href="solve.html">库准简易版WMS</a></p>
+								<p><a class="herf_a" href="case.html">普讯询报价</a></p>
+							</div>
+						</div>
+						<div class="fast_nav">
+							<div class="fast_tit"> 解决方案 </div>
+							<div class="fast_list">
+								<p><a class="herf_a" href="tmc1.html">生产车间管理</a></p>
+								<p><a class="herf_a" href="solve.html">生产计划管理</a></p>
+								<p><a class="herf_a" href="case.html">质量管理解决方案</a></p>
+								<p><a class="herf_a" href="agent.html">智能仓储解决方案</a></p>
+								<p><a class="herf_a" href="about.html">智能财务解决方案</a></p>
+								<p><a class="herf_a" href="agent.html">智能仓储解决方案</a></p>
+								<p><a class="herf_a" href="about.html">智能财务解决方案</a></p>
+							</div>
+						</div>
+						<div class="fast_nav">
+							<div class="fast_tit"> 合作伙伴 </div>
+							<div class="fast_list">
+								<p><a class="herf_a" href="tmc1.html">普讯伙伴</a></p>
+								<p><a class="herf_a" href="solve.html">普讯伙伴</a></p>
+								<p><a class="herf_a" href="case.html">普讯伙伴</a></p>
+								<p><a class="herf_a" href="agent.html">普讯伙伴</a></p>
+							</div>
+						</div>
+						<div class="fast_navs" style="width: 25%;">
+							<div class="fast_tit"> 联系我们 </div>
+							<div class="fast_list">
+								<p class="adds"><img src="images/telephones.png" />&nbsp;电话：<span><strong> 025-58277371
+											025-85519159</strong></span></p>
+								<p class="adds"><img src="images/address.png" />&nbsp;地址：南京市浦口区丽景路51号2007-2008室</p>
+								<p class="adds"><img src="images/Website.png" />&nbsp;邮箱：www.puxun111.com</p>
+							</div>
+
+						</div>
+						<div class="code_pic"
+							style="display: flex;align-items: flex-start;flex-direction: column;align-items: center;">
+							<img src="images/code.png" style="width: 100px;height: 100px;" />
+							<div class="" style="font-size: 14px;font-weight: 400;padding-top: 8px;">
+								微信扫一扫
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="">
+				<div class="" style="border-top: 1px solid #DDE0E4;margin: 0 auto;width: 1200px;">
+
+				</div>
+				<div class="copy">
+					<span>Copyright © 2014-2018</span>
+					&nbsp;&nbsp;<span>puxun111.com</span>
+					&nbsp;&nbsp;<span>南京普讯管理软件有限公司.</span>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span>版权所有</span>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span>服务条款</span>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span>隐私政策</span>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span>法律声明</span>
+				</div>
+			</div>
+			<div class="contact">
+				<div class="callbox"> <span class="contact_span"></span>
+					<div class="call_num">
+						<div class="tels" style="">
+							<img src="images/telephone.png" alt="" /><span style="color: #04060D;">咨询电话</span>
+						</div>
+						<div class="tele">400-888-8888</div>
+					</div>
+				</div>
+				<div class="wxbox"> <span></span>
+					<div class="wxpic">
+						<div>扫描微信二维码</div>
+						<img src="images/weixin.png" /> 
+					</div>
+				</div>
+				<div class="return"> <span class="top_up"></span>
+				</div>
+			</div>
+		</div>
+
+		<!--右侧返回顶部-->
+		<!--右侧返回顶部-->
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script>
+			$('.index_tabs a').mouseover(function() {
+				// 当前移入的tab高亮，其他的tab取消高亮
+				$(this).addClass("curs").siblings("a").removeClass("curs");
+				//获取当前点击tab的id
+				var indexs = $(this).index();
+				//让对应索引的盒子显示 类名控制是否显示
+				$(".index_conts .lists:eq(" + indexs + ")").addClass("selecteds").siblings("div").removeClass(
+					"selecteds");
+			})
+		</script>
+		<script>
+			$('.index_tab a').click(function() {
+				// 当前点击的tab高亮，其他的tab取消高亮
+				$(this).addClass("cur").siblings("a").removeClass("cur");
+				//获取当前点击tab的id
+				var index = $(this).index();
+				//让对应索引的盒子显示 类名控制是否显示
+				$(".index_cont .list:eq(" + index + ")").addClass("selected").siblings("div").removeClass("selected");
+			})
+		</script>
+		<script src="js/jquery.nGyroParallax.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$(".pro_ban").mousemove(function(e) {
+					$('#solve1').nGyroParallax({
+						magnification: .005
+					});
+					$('#solve2').nGyroParallax({
+						magnification: .004
+					});
+					$('#solve3').nGyroParallax({
+						magnification: .002
+					});
+				}).mouseleave(function() {
+					$('#solve1').nGyroParallax({
+						magnification: 0
+					});
+					$('#solve2').nGyroParallax({
+						magnification: 0
+					});
+					$('#solve3').nGyroParallax({
+						magnification: 0
+					});
+				})
+			});
+		</script>
+
+	</body>
+</html>

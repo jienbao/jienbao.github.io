@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .shadow{
+            position:fixed;
+            left:0;
+            top:0;
+            right:0;
+            bottom:0;
+            background-color:black;
+            opacity:0.6;
+            z-index:9;
+        }
+        .boxed-group {
+            width:500px;
+            height:400px;
+            background-color:#778899;
+            position:fixed;
+            left:50%;
+            top:50%;
+            margin-left:-250px;
+            margin-top:-200px;
+            z-index:10;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        .boxed-group h3{
+            font-weight: 400;
+            margin: 0;
+        }
+        .boxed-group h3 {
+            padding: 12px 20px;
+            color: #fff;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            background-color: #434a54;
+        }
+        .boxed-group .boxed-group-inner {
+            height:300px;
+            font-size: 14px;
+            font-weight: 300;
+            color: #aaa;
+            border-color: #e6e9ed;
+            background-color: #fff;
+        }
+        .btn-danger {
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 3px;
+            color: #fff;
+        }
+        #play-video{
+            background-color: #c0392b;
+            border: 1px solid #ab3326;
+        }
+        #cancel{
+            background-color: #C0C0C0;
+            border: 1px solid #C0C0C0;
+        }
+        #play-video:hover{
+            background-color: #ab3326;
+        }
+        #cancel:hover{
+            background-color: #696969;
+        }
+        .footer{
+            text-align: center;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body  style="margin:0;">
+<div>
+    <input type="button" value="点击" onclick="ShowModel();"/>
+</div>
+<div id="dialog">
+    <div class="shadow"></div>
+    <div class="site-content cf">
+        <div class="boxed-group">
+            <h3>视频播放</h3>
+            <div class="boxed-group-inner">
+                <video width="100%" height="300" controls>
+                    <source src="movie.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="footer">
+                <button href="#" class="btn btn-danger boxed-action" id="play-video">下载</button>
+                <button href="#" class="btn btn-danger boxed-action" id="cancel" onclick="cancel()">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    document.getElementById("dialog").style.display="none";
+    function ShowModel(){
+        document.getElementById("dialog").style.display="";
+    }
+    function cancel(){
+        document.getElementById("dialog").style.display="none";
+    }
+</script>
+</body>
+</html>

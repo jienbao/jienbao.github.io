@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>js、jq实现tab切换</title>
+	</head>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			list-style: none;
+			text-decoration: none;
+		}
+
+		.indexs .index_tabs {
+			width: 1200px;
+			height: 45px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin: 0 auto;
+		}
+
+		.indexs .index_tabs a {
+			height: 100%;
+			line-height: 45px;
+			color: #04060D;
+			text-align: center;
+		}
+
+		.index .index_tabs a:hover {
+			color: ##04060D !important;
+			font-weight: 600;
+			border-bottom: 3px solid #ff7b00;
+		}
+
+		.curs {
+			font-weight: 600;
+			border-bottom: 3px solid #ff7b00;
+		}
+
+		.index_conts {
+			width: 100%;
+		}
+
+		.index_conts .lists {
+			display: none;
+			text-align: center;
+			padding: 20px;
+		}
+
+		.selecteds {
+			display: block !important;
+		}
+	</style>
+	<body>
+		<div class="indexs">
+			<div class="index_tabs">
+				<a href="javascript:void(0);" class="curs">生产车间管理</a>
+				<a href="javascript:void(0);">生产计划管理</a>
+				<a href="javascript:void(0);">质量管理解决方案</a>
+				<a href="javascript:void(0);">智能仓储解决方案</a>
+				<a href="javascript:void(0);">智能财务解决方案</a>
+			</div>
+			<div class="index_conts">
+				<div class="lists selecteds">北京是个好地方</div>
+				<div class="lists">上海是个好地方</div>
+				<div class="lists">杭州是个好地方</div>
+				<div class="lists">深圳是个好地方</div>
+				<div class="lists">西安是个好地方</div>
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script>
+			$('.index_tabs a').mouseover(function() {
+				// 当前移入的tab高亮，其他的tab取消高亮
+				$(this).addClass("curs").siblings("a").removeClass("curs");
+				//获取当前点击tab的id
+				var indexs = $(this).index();
+				//让对应索引的盒子显示 类名控制是否显示
+				$(".index_conts .lists:eq(" + indexs + ")").addClass("selecteds").siblings("div").removeClass("selecteds");
+			})
+		</script>
+	</body>
+</html>

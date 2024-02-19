@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+
+			#box {
+				width: 1200px;
+				margin: 0 auto;
+			}
+
+			.boximg {
+				width: 40px;
+				height: 40px;
+			}
+
+			#top {
+				text-align: end;
+			}
+
+			.uls {
+				width: 250px;
+				float: right;
+				display: none;
+				width: 244px;
+				background: #FFFFFF;
+				box-shadow: 0 1px 15px 0 #1a20281a;
+				border-radius: 4px;
+				padding: 15px 0;
+			}
+
+			.lis {
+				align-items: center;
+				padding-left: 10px;
+				color: #000;
+				font-style: none;
+				height: 45px;
+				display: flex;
+				align-items: center;
+				text-decoration: none;
+			}
+
+			.lis_li {
+				padding-left: 10px;
+				padding: 0 10px;
+				color: #000;
+				font-style: none;
+				height: 45px;
+				display: flex;
+				align-items: center;
+			}
+
+			.lis_lis {
+				color: #000;
+				font-style: none;
+				height: 45px;
+				display: flex;
+				align-items: center;
+			}
+
+			.lis_left {
+				padding-left: 10px;
+				color: #1D2129;
+				text-decoration: none;
+			}
+
+			.imgImages {
+				width: 25%;
+				display: flex;
+				align-items: center;
+			}
+
+			.videos_img {
+				width: 20px;
+				height: 20px;
+			}
+
+			.puxun {
+				font-weight: 600;
+				font-size: 16px;
+				width: 60%;
+			}
+
+			.puxunImg {
+				width: 15%;
+				display: flex;
+				align-items: center;
+			}
+
+			.imgmore {
+				width: 18px;
+				height: 18px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="box">
+			<div id="top"><img src="./images/images.png" class="boximg" alt="" /></div>
+			<ul id="uls" class="uls">
+				<li id="lis">
+					<a href="" class="lis" style="display: flex;">
+						<div class="imgImages">
+							<img src="./images/images.png" class="boximg" alt="" />
+						</div>
+						<div class="puxun">普讯钢贸管理软件</div>
+						<div class="puxunImg">
+							<img class="imgmore" src="images/mores.png" alt="" />
+						</div>
+					</a>
+				</li id="lis">
+				<li  id="lis" class="lis_li"><img class="videos_img" src="./images/quit.png" alt="" />
+					<div>
+						<a class="lis_left" href="">培训视频</a>
+					</div>
+				</li>
+				<li  id="lis" class="lis_lis lis_left"><img src="./images/videos.png" class="videos_img" />
+					<div>
+						<a class="lis_left" href="">退出</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<script>
+			var box = document.getElementById('box');
+			var gameTop = document.getElementById('top')
+			var gameList = document.getElementById('uls')
+			var game = document.getElementById('lis')
+			// var gameList = document.querySelector('ul');
+			// var game = document.querySelectorAll('li')
+
+			// 鼠标移入，出现下拉菜单
+			box.onmouseenter = function() {
+				console.log("鼠标移入");
+				gameList.style.display = 'block';
+			}
+			// 鼠标移除，菜单消失
+			box.onmouseleave = function() {
+				gameList.style.display = 'none';
+			}
+
+			// 鼠标移入，背景变色
+			// 事件委托   子事父做
+			gameList.onmouseover = function(e) {
+				console.log("ul移入了");
+
+				// 排他思想
+				if (e.target.nodeName == 'LI') {
+					for (var i = 0; i < game.length; i++) {
+						this.children[i].style.backgroundColor = '#fff'
+
+						console.log("移入了");
+
+					}
+					e.target.style.backgroundColor = '#f2f4f5'
+				}
+			}
+
+			//点击使顶部出现点击的名字
+			// gameList.onclick = function(e) {
+			// 	if (e.target.nodeName == 'LI') {
+			// 		gameTop.innerHTML = e.target.innerHTML
+			// 	}
+			// }
+		</script>
+	</body>
+
+</html>

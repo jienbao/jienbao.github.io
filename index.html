@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>index</title>
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<meta name="author" content="order by www.adminbuy.cn">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/public.js"></script>
+		<script src="js/raphael.min.js"></script>
+	</head>
+	<style>
+		#box {
+			width: 10%;
+			height: 60px;
+
+		}
+
+		.boximg {
+			width: 40px;
+			height: 40px;
+		}
+
+		#top {
+			height: 60px;
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+		}
+
+		.uls {
+			display: none;
+			width: 250px;
+			background: #FFFFFF;
+			box-shadow: 0 1px 15px 0 #1a20281a;
+			border-radius: 4px;
+			padding: 15px 0;
+			float: right;
+
+		}
+
+		.lis {
+			align-items: center;
+			padding-left: 10px;
+			color: #000;
+			font-style: none;
+			height: 45px;
+			display: flex;
+			align-items: center;
+			text-decoration: none;
+		}
+
+		.lis_li {
+			padding-left: 10px;
+			padding: 0 10px;
+			color: #000;
+			font-style: none;
+			height: 45px;
+			display: flex;
+			align-items: center;
+		}
+		#lis:hover{
+			background: #F2F4F5;
+		}
+		.lis_lis {
+			color: #000;
+			font-style: none;
+			height: 45px;
+			display: flex;
+			align-items: center;
+		}
+
+		.lis_left {
+			padding-left: 10px;
+			color: #1D2129;
+			text-decoration: none;
+		}
+
+		.imgImages {
+			width: 25%;
+			display: flex;
+			align-items: center;
+		}
+
+		.videos_img {
+			width: 20px;
+			height: 20px;
+		}
+
+		.puxun {
+			font-weight: 600;
+			font-size: 16px;
+			width: 60%;
+		}
+
+		.puxunImg {
+			width: 15%;
+			display: flex;
+			align-items: center;
+		}
+
+		.imgmore {
+			width: 18px;
+			height: 18px;
+		}
+	</style>
+	<body>
+		<div class="topbox">
+			<div class="head clearfloat" style="width: 1200px;">
+				<div class="logo clearfloat" style="width: 15%;"> <em></em> </div>
+				<div class="nav" style="width: 60%;">
+					<ul class="clearfloat">
+						<li class="active"><a href="index.html">首页</a></li>
+						<li><a href="about.html">公司简介</a></li>
+						<li><a href="product1.html">普讯产品</a></li>
+						<li><a href="Solution.html">解决方案 </a>
+							<div class="" style="width: 100%;margin: 0 auto;">
+								<div class="nav_down" style="">
+									<div class="nav_down_nav">
+										<div class="nav_down_nav_left">
+											<p>解决方案</p>
+											<span>Total Solution</span>
+										</div>
+										<div class="nav_down_nav_center">
+											<ul>
+												<li>
+													<p><a href="">生产计划管理</a></p>
+													<span><a href="">生产计划管理</a></span>
+												</li>
+												<li>
+													<p><a href="">生产计划管理</a></p>
+													<span><a href="">生产计划管理</a></span>
+												</li>
+												<li>
+													<p><a href="">生产计划管理</a></p>
+													<span><a href="">生产计划管理</a></span>
+												</li>
+												<li>
+													<p><a href="">生产计划管理</a></p>
+													<span><a href="">生产计划管理</a></span>
+												</li>
+												<li>
+													<p><a href="">生产计划管理</a></p>
+													<span><a href="">生产计划管理</a></span>
+												</li>
+												<li>
+													<p><a href="">生产计划管理</a></p>
+													<span><a href="">生产计划管理</a></span>
+												</li>
+												<li>
+													<p><a href="">生产计划管理</a></p>
+													<span><a href="">生产计划管理</a></span>
+												</li>
+
+											</ul>
+										</div>
+										<div class="nav_down_nav_right">
+											<img src="images/jsfa_img.png">
+										</div>
+									</div>
+<!--									<p><a href="">生产车间管理</a></p>-->
+<!--									<p><a href="">生产计划管理</a></p>-->
+<!--									<p><a href="">质量管理解决方案</a></p>-->
+<!--									<p><a href="">智能仓储解决方案</a></p>-->
+<!--									<p><a href="">智能财务解决方案</a></p>-->
+								</div>
+							</div>
+
+						</li>
+						<li><a href="partners.html">合作伙伴</a></li>
+						<li><a href="contactUs.html">联系我们</a></li>
+						<li><a href="recruit.html">诚聘英才</a></li>
+
+						<!-- <li><a href="tmc1.html">产品中心</a>
+							<div class="nav_down">
+								<p><a href="tmc1.html">TMC智慧消防云平台</a></p>
+								<p><a href="tmc2.html">TMC智慧消防APP/小程序</a></p>
+								<p><a href="tmc3.html">TMC可视化指挥平台</a></p>
+								<p><a href="hard.html">硬件终端</a></p>
+							</div>
+						</li> -->
+
+					</ul>
+				</div>
+				<div class="login_img" style="">
+					<img src="images/search.png" alt="">
+					<input class="login_input" placeholder="请输入关键字" type="text" style="">
+				</div>
+				<!-- <div class="login_peixun" style="">
+					<a style="color: #fff;" href="login.html">登录培训</a>
+				</div> -->
+
+
+				<!-- /////////////////////////////////// -->
+				<div id="box">
+					<div id="top"><img src="./images/images.png" class="boximg" alt="" /></div>
+					<ul id="uls" class="uls">
+						<li id="lis">
+							<a href="" class="lis" style="display: flex;">
+								<div class="imgImages">
+									<img src="./images/images.png" class="boximg" alt="" />
+								</div>
+								<div class="puxun">普讯钢贸管理软件</div>
+								<div class="puxunImg">
+									<img class="imgmore" src="images/mores.png" alt="" />
+								</div>
+							</a>
+						</li id="lis">
+						<li id="lis" class="lis_li"><img class="videos_img" src="./images/quit.png" alt="" />
+							<div>
+								<a class="lis_left" href="">培训视频</a>
+							</div>
+						</li>
+						<li id="lis" class="lis_lis lis_left"><img src="./images/videos.png" class="videos_img" />
+							<div>
+								<a class="lis_left" href="">退出</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- /////////////////////////////////// -->
+			</div>
+		</div>
+		<!--top-->
+
+		<div class="wraps">
+			<div class="banner">
+				<!-- <ul class=""> -->
+				<ul class="clearfloat bannerul">
+					<li> <img src="images/banner1.png" />
+						<div class="ban_text">
+							<div class="ban_more"> <a href="">了解更多</a> </div>
+						</div>
+
+					</li>
+					<li> <img src="images/banner2.png" />
+						<div class="ban_text">
+							<div class="ban_more"> <a href="">了解更多</a> </div>
+						</div>
+
+					</li>
+					<li> <img src="images/banner3.png" />
+						<div class="ban_text">
+							<div class="ban_more"> <a href="">了解更多</a> </div>
+						</div>
+
+					</li>
+					<li> <img src="images/banner4.png" />
+						<div class="ban_text">
+							<div class="ban_more"> <a href="">了解更多</a> </div>
+						</div>
+
+					</li>
+					<li> <img src="images/banner5.png" />
+						<div class="ban_text">
+							<div class="ban_more"> <a href="">了解更多</a> </div>
+						</div>
+
+					</li>
+				</ul>
+				<ul class="num clearfloat">
+					<li class="active"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<!--banner-->
+			<!-- 公司简介 -->
+			<div class="pro_box">
+				<div class="pro_tit"> 公司简介 </div>
+				<div class="pro_info"> 始终聚焦于为用户创造价值 </div>
+				<!-- <div class="ban_text"> -->
+				<div class="learn_more"> <a href="" style="color: #FF7B00;">了解更多</a> </div>
+				<!-- </div> -->
+				<div class="pro_list" style="display: flex;width: 48%;">
+					<div class="year">
+						<div class="year_number">22</div>
+						<img class="year_img" src="images/jia.png" alt="">
+						<div class="develop">年发展</div>
+					</div>
+					<div class="year">
+						<div class="year_number">88</div>
+						<img class="year_img" src="images/jia.png" alt="">
+						<div class="develop">行业方案</div>
+					</div>
+					<div class="year">
+						<div class="year_number">200</div>
+						<img class="year_img" src="images/jia.png" alt="">
+						<div class="develop">服务人员</div>
+					</div>
+					<div class="year">
+						<div class="year_number">5000</div>
+						<img class="year_img" src="images/jia.png" alt="">
+						<div class="develop">优质客户</div>
+					</div>
+				</div>
+			</div>
+			<!-- 公司简介 -->
+
+			<!-- 持续创新的产品与服务 -->
+			<div class="pro_box" style="margin-top: 65px;">
+				<div class="pro_tit"> 持续创新的产品与服务 </div>
+				<div class="pro_info"> 做钢贸行业管理专家 </div>
+				<!-- <div class="ban_text"> -->
+				<div class="learn_more" style="width: 120px;"> <a href="" style="color: #FF7B00;">查看全部产品</a> </div>
+				<!-- </div> -->
+				<div class="pro_list" style="display: flex;width: 100%;">
+					<div class="service">
+						<div class="bk_img">
+							<div class="digitization">数字化经营</div>
+							<div class="innovate">持续创新的产品与服务</div>
+							<div class="mores">了解更多</div>
+						</div>
+					</div>
+					<div class="steel">
+						<div class="conter">
+							<div class="names">钢贸宝</div>
+							<div class="details">助力钢贸企业安全永续经营</div>
+							<div class="check">
+								<a href="" style="color: #FF7B00;">查看</a>
+							</div>
+						</div>
+					</div>
+					<div class="Information">
+						<div class="conter">
+							<div class="names">普讯询报价</div>
+							<div class="details">助力钢贸企业安全永续经营</div>
+							<div class="check">
+								<a href="" style="color: #FF7B00;">查看</a>
+							</div>
+						</div>
+					</div>
+					<div class="wms">
+						<div class="conter">
+							<div class="names">库准简易版WMS</div>
+							<div class="details">助力钢贸企业安全永续经营</div>
+							<div class="check">
+								<a href="" style="color: #FF7B00;">查看</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 持续创新的产品与服务 -->
+
+			<!-- 钢贸系统发展阶段 -->
+			<div class="pro_box">
+				<div class="pro_tit"> 钢贸系统发展阶段 </div>
+				<!-- <div class="pro_info"> 钢铁制造类企业多场景解决方案 </div> -->
+				<div class="learn_more"> <a href="" style="color: #FF7B00;">查看全部产品</a> </div>
+				<div class="background">
+					<!-- <div class="fire_info">
+								“人防、物防、技防”结合应用于传统的城市消防管理和监督，实现四个消防在线。
+							</div> -->
+					<style>
+						.myImage {
+							width: 25px;
+							height: 25px;
+							padding-left: 10px;
+						}
+
+						.fir_cut {
+							width: 210px;
+							float: left;
+							/* height: 443px; */
+							background: transparent;
+						}
+
+						.fir_cut li {
+							cursor: pointer;
+							height: 70px;
+							width: 100%;
+							display: table;
+						}
+
+						.firline {
+							height: 55px;
+							line-height: 55px;
+						}
+
+						.fire_name {
+							font-size: 18px;
+							text-align: justify;
+							font-weight: 500;
+							background: url(./images/bg1.png);
+							/* width: 25%; */
+							width: 85%;
+							height: 62px;
+							background-repeat: no-repeat;
+							background-position: center center;
+							background-size: 100% 100%;
+							line-height: 62px;
+						}
+
+						.fire_ban1 {
+							margin: 37px auto 0;
+							width: 1196px;
+							overflow: hidden;
+							padding-top: 60px;
+							display: flex;
+							height: 500px;
+						}
+
+						.fieline_box {
+							box-sizing: border-box;
+							float: left;
+							overflow: hidden;
+							width: 70%;
+							margin-left: 0;
+						}
+
+						.post {
+							color: #FF7B00;
+							font-weight: bolder;
+							font-size: 30px;
+							width: 100%;
+						}
+
+						.posts {
+							color: #000000;
+							height: 35px;
+							line-height: 35px;
+							font-weight: 600;
+						}
+
+						.posts span {
+							font-size: 17px;
+							font-weight: 400;
+
+						}
+
+						.fir_cut {
+							float: left;
+							background: transparent;
+							width: 30%;
+						}
+
+						.deta_tit {
+							padding-top: 20px;
+						}
+					</style>
+					<div class="fire_ban1 clearfloat">
+						<div class="fir_cut">
+							<ul>
+								<li>
+									<div class="fir_use">
+										<div class="img_left"></div>
+										<div class="fire_name">
+											钢贸1.0
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="fir_use">
+										<div class="fire_name">
+											钢贸2.0
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="fir_use">
+										<div class="fire_name">
+											钢贸3.0
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="fir_use">
+										<div class="fire_name">
+											钢贸4.0
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="fir_use">
+										<div class="fire_name">
+											钢贸5.0
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+
+						<div class="fieline_box">
+							<div class="firline active">
+								<div class="deta_tit">
+									<div class="post">钢贸1.0</div>
+									<div class="" style="padding-top:15px;">
+										<div class="posts">纯手工作业：<span>手工库存报表，手工开单，财务核算全部手工。</span></div>
+										<div class="posts">公司规模：<span>2-3人；</span></div>
+										<div class="posts">专业财务人员：<span>代账会计；</span></div>
+										<div class="posts">现货库存：<span>50-300吨；</span></div>
+										<div class="posts">常往来客户数：<span>10-50家</span></div>
+										<div class="posts">发展之道：<span>公司发展当下需要解决库存问题，确保多人同时做业务、开单子，客户欠款实实共享。</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="firline ">
+								<div class="deta_tit">
+									<div class="post">钢贸2.0</div>
+									<div class="" style="padding-top:15px;">
+										<div class="posts">纯手工作业：<span>手工库存报表，手工开单，财务核算全部手工。</span></div>
+										<div class="posts">公司规模：<span>2-3人；</span></div>
+										<div class="posts">专业财务人员：<span>代账会计；</span></div>
+										<div class="posts">现货库存：<span>50-300吨；</span></div>
+										<div class="posts">常往来客户数：<span>10-50家</span></div>
+										<div class="posts">发展之道：<span>公司发展当下需要解决库存问题，确保多人同时做业务、开单子，客户欠款实实共享。</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="firline">
+								<div class="deta_tit">
+									<div class="post">钢贸3.0</div>
+									<div class="" style="padding-top:15px;">
+										<div class="posts">纯手工作业：<span>手工库存报表，手工开单，财务核算全部手工。</span></div>
+										<div class="posts">公司规模：<span>2-3人；</span></div>
+										<div class="posts">专业财务人员：<span>代账会计；</span></div>
+										<div class="posts">现货库存：<span>50-300吨；</span></div>
+										<div class="posts">常往来客户数：<span>10-50家</span></div>
+										<div class="posts">发展之道：<span>公司发展当下需要解决库存问题，确保多人同时做业务、开单子，客户欠款实实共享。</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="firline ">
+								<div class="deta_tit">
+									<div class="post">钢贸4.0</div>
+									<div class="" style="padding-top:15px;">
+										<div class="posts">纯手工作业：<span>手工库存报表，手工开单，财务核算全部手工。</span></div>
+										<div class="posts">公司规模：<span>2-3人；</span></div>
+										<div class="posts">专业财务人员：<span>代账会计；</span></div>
+										<div class="posts">现货库存：<span>50-300吨；</span></div>
+										<div class="posts">常往来客户数：<span>10-50家</span></div>
+										<div class="posts">发展之道：<span>公司发展当下需要解决库存问题，确保多人同时做业务、开单子，客户欠款实实共享。</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="firline">
+								<div class="deta_tit">
+									<div class="post">钢贸5.0</div>
+									<div class="" style="padding-top:15px;">
+										<div class="posts">纯手工作业：<span>手工库存报表，手工开单，财务核算全部手工。</span></div>
+										<div class="posts">公司规模：<span>2-3人；</span></div>
+										<div class="posts">专业财务人员：<span>代账会计；</span></div>
+										<div class="posts">现货库存：<span>50-300吨；</span></div>
+										<div class="posts">常往来客户数：<span>10-50家</span></div>
+										<div class="posts">发展之道：<span>公司发展当下需要解决库存问题，确保多人同时做业务、开单子，客户欠款实实共享。</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 钢贸系统发展阶段 -->
+
+			<!--多场景解决方案-->
+			<div class="pro_box">
+				<div class="pro_tit"> 多场景解决方案，加速钢贸智能 </div>
+				<div class="pro_info"> 钢铁制造类企业多场景解决方案 </div>
+				<div class="learn_more"> <a href="" style="color: #FF7B00;">查看全部方案</a> </div>
+				<div class="pro_list" style="width: 1200px;">
+					<ul class="clearfloat" style="display: flex;width: 100%;justify-content: space-between;">
+						<li class="active">
+							<!-- <div class="pro_top"> <a href="javascript:void(0);"> &#xe615; </a> </div> -->
+							<div class="pro_name"> 生产车间管理 </div>
+						</li>
+						<li>
+							<!-- <div class="pro_top"> <a href="javascript:void(0);"> &#xe610; </a> </div> -->
+							<div class="pro_name"> 生产计划管理 </div>
+						</li>
+						<li>
+							<!-- <div class="pro_top"> <a href="javascript:void(0);"> &#xe613; </a> </div> -->
+							<div class="pro_name"> 质量管理解决方案 </div>
+						</li>
+						<li>
+							<!-- <div class="pro_top"> <a href="javascript:void(0);"> &#xe691; </a> </div> -->
+							<div class="pro_name"> 智能仓储解决方案 </div>
+						</li>
+						<li>
+							<!-- <div class="pro_top"> <a href="javascript:void(0);"> &#xe691; </a> </div> -->
+							<div class="pro_name"> 智能财务解决方案 </div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!--多场景解决方案-->
+			<div class="tmcbox">
+				<div class="tmc active clearfloat">
+					<div class="tmc_text">
+						<div class="workshop">
+							<div class="generate" style="display: flex;">
+								<div class="tmc_tit"> 生产车间管理 </div>
+								<img style="padding-left: 5px;height: 40px;width: 40px;" src="images/play.png" alt="">
+							</div>
+							<div class="tmc_info">
+								通过平台对车间终端数据进行实时采集和处理，并结合平台大数据、AI技术、3D建模能力，打造数字李生车间，提供工厂5S管理、生产数据综合看板、质量异常监控、设备异常分析。
+							</div>
+							<div class="check_more">
+								<a class="more" href="">了解更多</a>
+							</div>
+						</div>
+					</div>
+					<div class="tmc_pic"> <img src="images/programme1.png" /> </div>
+				</div>
+				<div class="tmc clearfloat">
+					<div class="tmc_text">
+						<div class="workshop">
+							<div class="generate" style="display: flex;">
+								<div class="tmc_tit"> 生产计划管理 </div>
+								<img style="padding-left: 5px;height: 40px;width: 40px;" src="images/play.png" alt="">
+							</div>
+							<div class="tmc_info">
+								通过平台对车间终端数据进行实时采集和处理，并结合平台大数据、AI技术、3D建模能力，打造数字李生车间，提供工厂5S管理、生产数据综合看板、质量异常监控、设备异常分析。
+							</div>
+							<div class="check_more">
+								<a class="more" href="">了解更多</a>
+							</div>
+						</div>
+					</div>
+					<div class="tmc_pic"> <img src="images/programme2.png" /> </div>
+				</div>
+				<div class="tmc clearfloat">
+					<div class="tmc_text">
+						<div class="workshop">
+							<div class="generate" style="display: flex;">
+								<div class="tmc_tit"> 质量管理解决方案 </div>
+								<img style="padding-left: 5px;height: 40px;width: 40px;" src="images/play.png" alt="">
+							</div>
+							<div class="tmc_info">
+								通过平台对车间终端数据进行实时采集和处理，并结合平台大数据、AI技术、3D建模能力，打造数字李生车间，提供工厂5S管理、生产数据综合看板、质量异常监控、设备异常分析。
+							</div>
+							<div class="check_more">
+								<a class="more" href="">了解更多</a>
+							</div>
+						</div>
+					</div>
+					<div class="tmc_pic"> <img src="images/programme3.png" /> </div>
+				</div>
+				<div class="tmc clearfloat">
+					<div class="tmc_text">
+						<div class="workshop">
+							<div class="generate" style="display: flex;">
+								<div class="tmc_tit"> 智能仓储解决方案 </div>
+								<img style="padding-left: 5px;height: 40px;width: 40px;" src="images/play.png" alt="">
+							</div>
+							<div class="tmc_info">
+								通过平台对车间终端数据进行实时采集和处理，并结合平台大数据、AI技术、3D建模能力，打造数字李生车间，提供工厂5S管理、生产数据综合看板、质量异常监控、设备异常分析。
+							</div>
+							<div class="check_more">
+								<a class="more" href="">了解更多</a>
+							</div>
+						</div>
+					</div>
+					<div class="tmc_pic"> <img src="images/programme4.png" /> </div>
+				</div>
+				<div class="tmc clearfloat">
+					<div class="tmc_text">
+						<div class="workshop">
+							<div class="generate" style="display: flex;">
+								<div class="tmc_tit"> 智能财务解决方案 </div>
+								<img style="padding-left: 5px;height: 40px;width: 40px;" src="images/play.png" alt="">
+							</div>
+							<div class="tmc_info">
+								通过平台对车间终端数据进行实时采集和处理，并结合平台大数据、AI技术、3D建模能力，打造数字李生车间，提供工厂5S管理、生产数据综合看板、质量异常监控、设备异常分析。
+							</div>
+							<div class="check_more">
+								<a class="more" href="">了解更多</a>
+							</div>
+						</div>
+					</div>
+					<div class="tmc_pic"> <img src="images/programme5.png" /> </div>
+				</div>
+			</div>
+			<!--多场景解决方案-->
+
+
+
+			<style>
+				.pro_boxs {
+					width: 1200px;
+					overflow: hidden;
+					margin: 0px auto;
+					padding: 40px 0;
+				}
+
+				.pro_tits {
+					margin: auto;
+					margin-bottom: 5px;
+					/* text-align: center; */
+					height: 42px;
+					line-height: 42px;
+					color: #04060D;
+					font-size: 26px;
+					font-weight: 600;
+				}
+
+				.learn_mores {
+					height: 32px;
+					line-height: 32px;
+					font-size: 14px;
+					text-align: center;
+					color: #FF7B00 !important;
+					border: 1.8px solid #FF7B00;
+					width: 135px;
+					margin-bottom: 5px;
+					/* margin: 0 auto; */
+					margin-top: 15px;
+					border-radius: 5px;
+				}
+
+				.tmcboxs {
+					height: 400px;
+					width: 1200px;
+					margin: 0 auto;
+				}
+
+				.tmc_texts {
+					float: right;
+					background-color: #fff;
+					width: 40%;
+					height: 400px;
+				}
+
+				.tmcs {
+					height: 400px;
+				}
+
+				.tmc_infos {
+					width: 100%;
+					font-size: 15px;
+				}
+
+				.check_mores {
+					border: none;
+					padding: 0 0;
+					width: 100%;
+					/* width: 85%; */
+					text-align: end;
+					font-size: 12px;
+				}
+			</style>
+			<!--多场景解决方案-->
+			<div class="pro_boxs">
+				<div class="pro_tits"> 携手合作伙伴共发展 </div>
+				<!-- <div class="pro_info"> 钢铁制造类企业多场景解决方案 </div> -->
+				<div class="learn_mores"> <a href="" style="color: #FF7B00;">查看全部合作伙伴</a> </div>
+
+			</div>
+			<style>
+				video {
+
+					object-fit: cover;
+				}
+			</style>
+			<!--多场景解决方案-->
+			<div class="tmcboxs" style="width: 1200px;">
+				<div class="tmc active clearfloat tmcs">
+					<div class="tmc_pic" style="height: 400px;width: 55%;">
+						<video width="660" height="400" controls>
+							<source src="video/pxgk1.mp4" type="video/mp4">
+						</video>
+						<!-- <video width="720" height="320" controls autoplay>
+							<source src="video/pxgk1.mp4" type="video/ogg">
+							<source src="video/pxgk1.mp4" type="video/mp4">
+							<source src="video/pxgk1.mp4" type="video/webm">
+							<object data="movie.mp4" width="720" height="320">
+								<embed width="720" height="320" src="video/pxgk1.mp4">
+							</object>
+						</video> -->
+					</div>
+					<div class="tmc_text tmc_texts" style="">
+						<div class="workshops" style="">
+							<div class="generate" style="padding-bottom: 45px;">
+								<div class="tmc_tit"> 钢铁制造类企业多场景合作伙伴 </div>
+								<!-- <img style="padding-left: 5px;" src="images/play.png" alt=""> -->
+							</div>
+							<div class="tmc_info tmc_infos" style="">
+								通过平台对车间终端数据进行实时采集和处理，并结合平台大数据、AI技术、3D建模能力，打造数字李生车间，提供工厂5S管理、生产数据综合看板、质量异常监控、设备异常分析等
+							</div>
+							<div class="check_more check_mores" style="">
+								—— 字节跳动
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<!--多场景解决方案-->
+
+
+			<!--应用案例-->
+
+			<div class="friendbox">
+				<div class="fr_tit"> 更多合作客户 </div>
+				<div class="friend">
+					<ul class="clearfloat">
+						<li> <a href=""><img src="images/partner_logo1.png" /></a> </li>
+						<li> <a href=""><img src="images/partner_logo2.png" /></a> </li>
+						<li> <a href=""><img src="images/partner_logo3.png" /></a> </li>
+						<li> <a href=""><img src="images/partner_logo1.png" /></a> </li>
+						<li> <a href=""><img src="images/partner_logo2.png" /></a> </li>
+						<li> <a href=""><img src="images/partner_logo3.png" /></a> </li>
+						<li> <a href=""><img src="images/partner_logo1.png" /></a> </li>
+						<li> <a href=""><img src="images/partner_logo2.png" /></a> </li>
+						<li> <a href=""><img src="images/partner_logo3.png" /></a> </li>
+						<li> <a href=""><img src="images/partner_logo1.png" /></a> </li>
+						<li> <a href=""><img src="images/partner_logo2.png" /></a> </li>
+						<li> <a href=""><img src="images/partner_logo3.png" /></a> </li>
+						<!-- <li> <a href=""><img src="images/partner_logo1.png" /></a> </li>
+						<li> <a href=""><img src="images/partner_logo2.png" /></a> </li> -->
+					</ul>
+				</div>
+			</div>
+			<!--合作伙伴-->
+			<div class="reservation">
+				<div class="trialListening">
+					<div class="probation">预约免费试用</div>
+					<div class="contactInformation">留下您的姓名和联系方式，工作人员免费为您服务</div>
+				</div>
+				<div class="consultingService">
+					<input class="nameid" type="text" placeholder="您的姓名" />
+					<input class="telephoneid" type="text" placeholder="联系方式" />
+					<button class="buttonid">提交</button>
+				</div>
+			</div>
+			<!--合作伙伴-->
+			<div class="footerbox">
+				<div class="fast_navs fast_navs_logo">
+					<img src="images/logo1.png" class="imgLogo" alt="">
+				</div>
+				<div class="footer clearfloat">
+					<div class="footernews">
+						<div class="fast_nav">
+							<div class="fast_tit"> 公司简介 </div>
+							<div class="fast_list">
+								<p><a class="herf_a" href="tmc1.html">公司简介</a></p>
+								<p><a class="herf_a" href="solve.html">视频简介</a></p>
+							</div>
+						</div>
+						<div class="fast_nav">
+							<div class="fast_tit"> 普讯产品 </div>
+							<div class="fast_list">
+								<p><a class="herf_a" href="tmc1.html">钢贸宝</a></p>
+								<p><a class="herf_a" href="solve.html">库准简易版WMS</a></p>
+								<p><a class="herf_a" href="case.html">普讯询报价</a></p>
+							</div>
+						</div>
+						<div class="fast_nav">
+							<div class="fast_tit"> 解决方案 </div>
+							<div class="fast_list">
+								<p><a class="herf_a" href="tmc1.html">生产车间管理</a></p>
+								<p><a class="herf_a" href="solve.html">生产计划管理</a></p>
+								<p><a class="herf_a" href="case.html">质量管理解决方案</a></p>
+								<p><a class="herf_a" href="agent.html">智能仓储解决方案</a></p>
+								<p><a class="herf_a" href="about.html">智能财务解决方案</a></p>
+								<p><a class="herf_a" href="agent.html">智能仓储解决方案</a></p>
+								<p><a class="herf_a" href="about.html">智能财务解决方案</a></p>
+							</div>
+						</div>
+						<div class="fast_nav">
+							<div class="fast_tit"> 合作伙伴 </div>
+							<div class="fast_list">
+								<p><a class="herf_a" href="tmc1.html">普讯伙伴</a></p>
+								<p><a class="herf_a" href="solve.html">普讯伙伴</a></p>
+								<p><a class="herf_a" href="case.html">普讯伙伴</a></p>
+								<p><a class="herf_a" href="agent.html">普讯伙伴</a></p>
+							</div>
+						</div>
+						<div class="fast_navs" style="width: 25%;">
+							<div class="fast_tit"> 联系我们 </div>
+							<div class="fast_list">
+								<p class="adds"><img src="images/telephones.png" />&nbsp;电话：<span><strong> 025-58277371
+											025-85519159</strong></span></p>
+								<p class="adds"><img src="images/address.png" />&nbsp;地址：南京市浦口区丽景路51号2007-2008室</p>
+								<p class="adds"><img src="images/Website.png" />&nbsp;邮箱：www.puxun111.com</p>
+							</div>
+
+						</div>
+						<div class="code_pic">
+							<img class="code_pic_img" src="images/code.png" />
+							<div class="scan_it">
+								微信扫一扫
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="">
+					<div class="xians"></div>
+					<div class="copy">
+						<span>Copyright © 2014-2018</span>
+						&nbsp;&nbsp;<span>puxun111.com</span>
+						&nbsp;&nbsp;<span>南京普讯管理软件有限公司.</span>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span>版权所有</span>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span>服务条款</span>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span>隐私政策</span>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span>法律声明</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="contact">
+				<div class="callbox"> <span class="contact_span"></span>
+					<div class="call_num">
+						<div class="tels" style="">
+							<img src="images/telephone.png" alt="" /><span style="color: #04060D;">咨询电话</span>
+						</div>
+						<div class="tele">400-888-8888</div>
+					</div>
+				</div>
+				<div class="wxbox"> <span></span>
+					<div class="wxpic">
+						<div>扫描微信二维码</div>
+						<img src="images/weixin.png" />
+					</div>
+				</div>
+				<div class="return"> <span class="top_up"></span>
+				</div>
+			</div>
+		</div>
+
+		<!--右侧返回顶部-->
+
+	</body>
+	<script>
+		var box = document.getElementById('box');
+		var gameTop = document.getElementById('top')
+		var gameList = document.getElementById('uls')
+		var game = document.getElementById('lis')
+		// var gameList = document.querySelector('ul');
+		// var game = document.querySelectorAll('li')
+
+		// 鼠标移入，出现下拉菜单
+		box.onmouseenter = function() {
+			console.log("鼠标移入");
+			gameList.style.display = 'block';
+		}
+		// 鼠标移除，菜单消失
+		box.onmouseleave = function() {
+			gameList.style.display = 'none';
+		}
+
+		// 鼠标移入，背景变色
+		// 事件委托   子事父做
+		gameList.onmouseover = function(e) {
+			console.log("ul移入了");
+
+			// 排他思想
+			if (e.target.nodeName == 'LI') {
+				for (var i = 0; i < game.length; i++) {
+					// this.children[i].style.backgroundColor = '#fff'
+
+					console.log("移入了");
+
+				}
+				// e.target.style.backgroundColor = '#f2f4f5'
+			}
+		}
+
+		//点击使顶部出现点击的名字
+		// gameList.onclick = function(e) {
+		// 	if (e.target.nodeName == 'LI') {
+		// 		gameTop.innerHTML = e.target.innerHTML
+		// 	}
+		// }
+	</script>
+	<script>
+		var banner = function() {
+
+			(function(obj) {
+
+				obj.win = {
+
+					loopFun: function(el, val, bg, color, textColor, fontSize, size, r, time, easing) {
+
+						var si = r + size / 2;
+
+						var xy = r + size;
+
+						if (val < 0 || val > 100) {
+
+							return alert('请输入0~100之间的数')
+
+						}
+
+						var paper = Raphael(el, (r + size) * 2, (r + size) * 2);
+
+						paper.circle(xy, xy, r).attr({
+
+							'stroke-width': size,
+
+							stroke: bg
+
+						});
+
+						paper.customAttributes.arc = function(val) {
+
+							var v = 360 * val / 100,
+
+								s = -180,
+
+								e = s + v,
+
+								x = xy,
+
+								y = xy,
+
+								rad = Math.PI / 180,
+
+								x1 = x + r * Math.sin(-s * rad),
+
+								y1 = y + r * Math.cos(-s * rad),
+
+								x2 = x + r * Math.sin(-e * rad),
+
+								y2 = y + r * Math.cos(-e * rad),
+
+								path = [
+
+									['M', x1, y1],
+
+									['A', r, r, 0, +(e - s > 180), 1, x2, y2]
+
+								];
+
+							return {
+
+								path: path
+
+							};
+
+						};
+
+						var an = paper.path().attr({
+
+							'stroke-width': size,
+
+							stroke: color,
+
+							arc: 0.01
+
+						});
+
+						an.animate({
+
+							stroke: color,
+
+							arc: val
+
+						}, time, easing);
+
+						setTimeout(function() {
+
+							if (val == 100) {
+
+								paper.circle(xy, xy, r).attr({
+
+									'stroke-width': size,
+
+									stroke: color
+
+								});
+
+							}
+
+						}, time);
+
+						paper.customAttributes.txt = function(val) {
+
+							return {
+
+								text: Math.floor(val * 100) / 100 + '%'
+
+							}
+
+						};
+
+						var l = paper.text(xy, xy).attr({
+
+							txt: 0,
+
+							'fill': textColor,
+
+							'font-size': fontSize,
+
+							'font-weight': 700
+
+						});
+
+						l.animate({
+
+							txt: val
+
+						}, time);
+
+					},
+
+					stripFun: function(el, val, bg, color, textColor, fontSize, lenght, size, time, easing) {
+
+						var s = size / 2;
+
+						if (val < 0 || val > 100) {
+
+							return alert('请输入0~100之间的数')
+
+						}
+
+						var paper = Raphael(el, lenght, size);
+
+						paper.path('M 0,' + s + ' L' + lenght + ',' + s).attr({
+
+							'stroke-width': size,
+
+							stroke: bg
+
+						});
+
+						var strip = paper.path('M 0,' + s + ' L0,' + s).attr({
+
+							'stroke-width': size,
+
+							stroke: color
+
+						});
+
+						strip.animate({
+
+							path: 'M 0,' + s + ' L' + lenght / 100 * val + ',' + s
+
+						}, time, easing);
+
+						paper.customAttributes.arc = function(val) {
+
+							return {
+
+								text: Math.floor(val * 100) / 100 + '%'
+
+							}
+
+						};
+
+						var l = paper.text(lenght / 2, s).attr({
+
+							arc: 0,
+
+							'fill': textColor,
+
+							'font-size': fontSize
+
+						});
+
+						l.animate({
+
+							arc: val
+
+						}, time);
+
+					}
+
+				};
+
+			})(window);
+
+			win.loopFun($('.num li.active')[0], 100, '#808080', '#ffffff', 'none', '2px', 2, 7, 5000, 'linear');
+
+			var widths = $(".banner").width();
+
+			var lengths = $('.bannerul li').length;
+
+			$('.bannerul').append($('.bannerul li').first().clone());
+
+			var sid = null;
+
+			var index = 0;
+
+			$('.bannerul li').width(widths)
+
+
+
+			function play() {
+
+				index++;
+
+				if (index == $('.bannerul li').length) {
+
+					index = 1;
+
+					$('.bannerul').stop().animate({
+
+						'margin-left': 0
+
+					}, 0)
+
+				}
+
+				if (index == $('.bannerul li').length - 1) {
+
+					$(' .num li').eq(0).addClass('active').siblings().removeClass('active');
+
+					$(' .num li').eq(0).siblings("li").removeClass('active');
+
+				}
+
+				core(index);
+
+			}
+
+			sid = setInterval(play, 5000);
+
+			$(' .banner').hover(function() {
+
+				clearInterval(sid)
+
+			}, function() {
+
+				sid = setInterval(play, 5000);
+
+			})
+
+			$(".num li").click(function() {
+
+				index = $(this).index();
+
+				core(index);
+
+			})
+
+
+
+			function core(num) {
+
+				$('.bannerul').stop().animate({
+
+					'margin-left': -($('.bannerul li').eq(0).innerWidth() * num)
+
+				}, 1000);
+
+				$(' .num li').eq(num).addClass('active').siblings().removeClass('active');
+
+				win.loopFun($('.num li.active')[0], 100, '#808080', '#ffffff', 'none', '2px', 2, 7, 5000, 'linear');
+
+				$(' .num li').eq(num).siblings("li").find("svg").remove()
+
+				//          console.log(num)
+
+			}
+
+		}
+
+		banner();
+	</script>
+</html>

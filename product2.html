@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>解决方案</title>
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/public.js"></script>
+	</head>
+	<body>
+		<div class="topbox">
+			<div class="head clearfloat">
+				<div class="logo clearfloat">
+					<em></em><span>智慧消防大数据云平台</span>
+				</div>
+				<div class="nav">
+					<ul class="clearfloat">
+						<li><a href="index.html">首页</a></li>
+						<li><a href="tmc1.html">产品中心</a>
+							<div class="nav_down">
+								<p><a href="tmc1.html">TMC智慧消防云平台</a></p>
+								<p><a href="tmc2.html">TMC智慧消防APP/小程序</a></p>
+								<p><a href="tmc3.html">TMC可视化指挥平台</a></p>
+								<p><a href="hard.html">硬件终端</a></p>
+							</div>
+						</li>
+						<li class="active"><a href="solve.html">解决方案 </a>
+							<div class="nav_down">
+								<p><a href="">火灾自动报警系统解决方案</a></p>
+								<p><a href="">电气火灾监控系统解决方案</a></p>
+								<p><a href="">可燃气体监控系统解决方案</a></p>
+								<p><a href="">消防给水监测系统解决方案</a></p>
+								<p><a href="">气体灭火控制系统解决方案</a></p>
+								<p><a href="">防火门监控系统解决方案</a></p>
+								<p><a href="">消防视频监控系统解决方案</a></p>
+								<p><a href="">消防巡检系统解决方案</a></p>
+								<p><a href="">应急疏散系统解决方案</a></p>
+							</div>
+						</li>
+						<li><a href="case.html">应用案例</a></li>
+						<li><a href="agent.html">招商代理</a></li>
+						<li><a href="about.html">关于我们</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--top-->
+		<style>
+			.pro_ban {
+				/* width: 33.3%; */
+				background: url(images/recruit.png);
+				/* height: 246px; */
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: 100% 100%;
+				height: 320px;
+			}
+
+			.position {
+				color: #fff;
+				height: 315px;
+				display: flex;
+				align-items: end;
+				width: 63%;
+				margin: 0 auto;
+			}
+
+			.applicableGroup {
+				color: #fff;
+				font-size: 15px;
+				margin: 10px 0 0 0;
+				padding-left: 20px;
+				width: 315px;
+			}
+
+			.purpose {
+				color: #fff;
+				font-size: 15px;
+				padding-left: 20px;
+			}
+
+			.systeboxs {
+				margin: 52px auto 61px;
+				width: 65%;
+				/* margin: 0 auto; */
+				text-align: inherit;
+				/* height: 700px;*/
+			}
+
+			.systeboxss {
+				width: 65%;
+				/* margin: 0 auto; */
+				text-align: inherit;
+				/* height: 700px; */
+				margin: 0 auto;
+				margin-bottom: 40px;
+			}
+			}
+
+			.sys_tits {
+				text-align: inherit;
+				height: 42px;
+				line-height: 42px;
+				color: rgba(51, 51, 51, 1);
+				font-size: 22px;
+				width: 70%;
+				/* margin: 0 auto; */
+				font-weight: 600;
+			}
+
+			.productc {
+				/* width: 33.3%; */
+				background: url(images/product/c.png);
+				/* height: 246px; */
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: 100% 100%;
+				height: 160px;
+			}
+			.productd {
+				/* width: 33.3%; */
+				background: url(images/product/d.png);
+				/* height: 246px; */
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: 100% 100%;
+				height: 160px;
+			}
+			.producte {
+				/* width: 33.3%; */
+				background: url(images/product/e.png);
+				/* height: 246px; */
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: 100% 100%;
+				height: 160px;
+			}
+			.product1 {
+				/* width: 33.3%; */
+				background: url(images/product1.png);
+				/* height: 246px; */
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: 100% 100%;
+				height: 160px;
+			}
+
+			.enterprise {
+				display: flex;
+				align-items: center;
+			}
+
+			.left_en {
+				width: 33%;
+				height: 160px;
+				background: #3D6BFF;
+				border-radius: 8px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+			}
+
+			.company {
+				color: #fff;
+				font-weight: 600;
+				font-size: 18px;
+				padding-left: 20px;
+			}
+
+			.kern_boxs {
+				width: 65%;
+				/* height: 489px; */
+				background-position: center;
+				background-size: cover;
+				box-sizing: border-box;
+				margin: 0 auto;
+			}
+
+			.kern_list {
+				width: 100%;
+			}
+
+			.kern_list li {
+				cursor: pointer;
+				background: #F7F7F7;
+				top: 0;
+				/* float: left; */
+				overflow: hidden;
+				width: 285px;
+				background: #F7F7F7;
+				border-radius: 8px;
+			}
+
+			.procure {
+				background-color: #F7F7F7;
+				width: 285px;
+				border-radius: 15px;
+				margin-bottom: 20px;
+			}
+
+			.procure:hover {
+				background-color: #FF7B00;
+			}
+
+			.procure_img {
+				padding: 20px 25px;
+			}
+
+			.purchasingManagement {
+				padding: 0px 25px;
+				font-size: 18px;
+				font-weight: 600;
+				color: #161B2E;
+			}
+
+			.procure_describe {
+				font-size: 15px;
+				line-height: 30px;
+				padding: 20px 25px;
+				color: rgba(102, 102, 102, 1);
+			}
+		</style>
+		<div class="wraps">
+			<div class="pro_ban">
+				<div class="pro_use clearfloat">
+					<div class="pro_le">
+						<div class="position">
+							<img src="" alt="">
+							所在位置： 普讯产品
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--banner-->
+			<div class="main">
+				<div class="main-top">
+					<span
+						class="active">钢贸宝企业版</span><span>钢贸宝高端版</span><span>钢贸宝集团版</span><span>仓储WMS管理系统</span><span>其他自选购子系统</span>
+				</div>
+				<div class="systeboxs">
+					<!-- <div class="sys_tits">
+						系统架构图
+					</div> -->
+					<div class="enterprise">
+						<div class="left_en" style="background-color: #248DFF;">
+							<div class="company">钢贸宝企业版</div>
+							<div class="applicableGroup">
+								适用群：中小型钢贸企业
+							</div>
+							<div class="purpose">
+								用途: 在全面账目管理的基础之上,深化业务管理
+							</div>
+						</div>
+						<div class="product1" style="width: 67%;"></div>
+					</div>
+				</div>
+
+				<!--功能特点-->
+				<div class="kern_boxs">
+					<div class="kern_list" style="display: flex;justify-content: space-between;">
+						<div class="">
+							<div class="procure">
+								<img class="procure_img" src="images/product/product1.png" alt="">
+								<div class="purchasingManagement">
+									采购管理
+								</div>
+								<div class="procure_describe">
+									提供从采购订单，采购收货到采购付款的完整采购流程处理，采购进货单保存的同时可完成对库存数量和采购成本的核算和更新；提供采购付款(包括代垫运费,货到付款等)的资金结算处理。
+								</div>
+							</div>
+							<div class="procure">
+								<img class="procure_img" src="images/product/product5.png" alt="">
+								<div class="purchasingManagement">
+									应收应付
+								</div>
+								<div class="procure_describe">
+									支持预收款,预付款管理,快速进行多方核销;支持其他应收应付管理;自动生成报表。
+								</div>
+							</div>
+							<div class="procure">
+								<img class="procure_img" src="images/product/product9.png" alt="">
+								<div class="purchasingManagement">
+									资金管理
+								</div>
+								<div class="procure_describe">
+									通过对货款,运费,押金,借入借出款,公司费用,营业外收入以及银行往来等款项的收付记录和控制,往来单位的信用控制,往来单位的款项分析等,对企业的资金实现全方位的管理。
+								</div>
+							</div>
+						</div>
+						<div class="">
+							<div class="procure">
+								<img class="procure_img" src="images/product/product2.png" alt="">
+								<div class="purchasingManagement">
+									销售管理
+								</div>
+								<div class="procure_describe">
+									提供从销售报价,销售留货,销售出库和销售收款的完整销售流程处理,提供销售收款(包括代垫运费,发货收款等)的资金结算,支持现货销售,赊销等多种销售方式;客户信用管理;报价管理,订单执行进度跟踪,销售和盈利情况分析,销售业绩分析。
+								</div>
+							</div>
+							<div class="procure">
+								<img class="procure_img" src="images/product/product6.png" alt="">
+								<div class="purchasingManagement">
+									仓库管理
+								</div>
+								<div class="procure_describe">
+									支持多种常规出入库业务及产品组装,装卸,盘点业务;支持动态盘点;支持存货批次管理;全面的安全库存预警机制;准确的即时库存,结合订货量的可用库存查询;丰富的存货统计分析报表。
+								</div>
+							</div>
+							<div class="procure">
+								<img class="procure_img" src="images/product/product9.png" alt="">
+								<div class="purchasingManagement">
+									权限管理
+								</div>
+								<div class="procure_describe">
+									可根据部门员工的岗位及权限的大小进行系统权限配置。
+								</div>
+							</div>
+						</div>
+						<div class="">
+							<div class="procure">
+								<img class="procure_img" src="images/product/product3.png" alt="">
+								<div class="purchasingManagement">
+									价格管理
+								</div>
+								<div class="procure_describe">
+									提供价格管理,限价管理,特价管理以及售价全程监控。
+								</div>
+							</div>
+							<div class="procure">
+								<img class="procure_img" src="images/product/product7.png" alt="">
+								<div class="purchasingManagement">
+									存活报销
+								</div>
+								<div class="procure_describe">
+									支持多种盘点功能,加大盘点效率.提供报损,报溢,其他出库,其他入库资产增减报损报溢功能。
+								</div>
+							</div>
+						</div>
+						<div class="">
+							<div class="procure">
+								<img class="procure_img" src="images/product/product4.png" alt="">
+								<div class="purchasingManagement">
+									发票管理
+								</div>
+								<div class="procure_describe">
+									进项发票,销项发票的管理。
+								</div>
+							</div>
+							<div class="procure">
+								<img class="procure_img" src="images/product/product8.png" alt="">
+								<div class="purchasingManagement">
+									报表与分析
+								</div>
+								<div class="procure_describe">
+									自动出具净营运资本报表与利润表;支持报表汇总;支持自定义销售品种查询报表.涵盖销售,库户,存货,运费等全方位的营运分析。
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="systeboxss" style="margin-top: 20px;">
+					<div class="enterprise">
+						<div class="left_en" style="background-color: #19A8FF;">
+							<div class="company">钢贸宝集团版</div>
+							<div class="applicableGroup">
+								适用群: 追求精益管理,全面管控且拥有多个支机构的集团钢贸公司
+							</div>
+							<!-- <div class="purpose">
+								用途: 在全面账目管理的基础之上,深化业务管理
+							</div> -->
+						</div>
+						<div class="productc" style="width: 67%;"></div>
+					</div>
+				</div>
+				<div class="systeboxss">
+					<!-- <div class="sys_tits">
+						系统架构图
+					</div> -->
+					<div class="enterprise">
+						<div class="left_en" style="background-color: #00C5F0;">
+							<div class="company">仓储WMS管理系统</div>
+							<div class="applicableGroup">
+								适用群: 追求精益管理,全面管控且拥有多个支机构的集团钢贸公司
+							</div>
+						</div>
+						<div class="productd" style="width: 67%;"></div>
+					</div>
+				</div>
+				<div class="systeboxss">
+					<div class="enterprise">
+						<div class="left_en" style="background-color: #00D6D5;">
+							<div class="company">其他自选购子系统</div>
+							<div class="applicableGroup">
+								适用群：中小型钢贸企业
+							</div>
+							<div class="purpose">
+								适用群: 按照需求自主选购
+							</div>
+						</div>
+						<div class="producte" style="width: 67%;"></div>
+					</div>
+				</div>
+
+			</div>
+			<!--合作伙伴-->
+
+			<div class="footerbox">
+				<div class="footer clearfloat">
+					<div class="hot_line">
+						<img src="images/logo1.png" alt="" style="width: 196px;height: 50px;">
+						<!-- <div class="hot_tit"> <span>售前咨询热线</span> </div>
+						<div class="call"> 400-888-8888 </div>
+						<div class="qqin"> QQ咨询 </div> -->
+					</div>
+					<div class="fast_nav">
+						<div class="fast_tit"> 公司简介 </div>
+						<div class="fast_list">
+							<p><a class="herf_a" href="tmc1.html">公司简介</a></p>
+							<p><a class="herf_a" href="solve.html">视频简介</a></p>
+						</div>
+					</div>
+					<div class="fast_nav">
+						<div class="fast_tit"> 普讯产品 </div>
+						<div class="fast_list">
+							<p><a class="herf_a" href="tmc1.html">钢贸宝</a></p>
+							<p><a class="herf_a" href="solve.html">库准简易版WMS</a></p>
+							<p><a class="herf_a" href="case.html">普讯询报价</a></p>
+						</div>
+					</div>
+					<div class="fast_nav">
+						<div class="fast_tit"> 解决方案 </div>
+						<div class="fast_list">
+							<p><a class="herf_a" href="tmc1.html">生产车间管理</a></p>
+							<p><a class="herf_a" href="solve.html">生产计划管理</a></p>
+							<p><a class="herf_a" href="case.html">质量管理解决方案</a></p>
+							<p><a class="herf_a" href="agent.html">智能仓储解决方案</a></p>
+							<p><a class="herf_a" href="about.html">智能财务解决方案</a></p>
+							<p><a class="herf_a" href="agent.html">智能仓储解决方案</a></p>
+							<p><a class="herf_a" href="about.html">智能财务解决方案</a></p>
+						</div>
+					</div>
+					<div class="fast_nav">
+						<div class="fast_tit"> 合作伙伴 </div>
+						<div class="fast_list">
+							<p><a class="herf_a" href="tmc1.html">普讯伙伴</a></p>
+							<p><a class="herf_a" href="solve.html">普讯伙伴</a></p>
+							<p><a class="herf_a" href="case.html">普讯伙伴</a></p>
+							<p><a class="herf_a" href="agent.html">普讯伙伴</a></p>
+						</div>
+					</div>
+					<!-- <div class="contus">
+						<div class="fast_tit"> 联系我们 </div>
+						<div class="fast_list">
+							<p>武汉江苏某某科技有限公司</p>
+							<p>地址：江苏省南京市玄武区玄武湖</p>
+							<p>邮箱：admin@adminbuy.cn</p>
+							<p>电话：400-888-8888</p>
+						</div>
+					</div> -->
+					<div class="code">
+						<div class="fast_tit"> 联系我们 </div>
+						<div class="fast_list">
+							<p class="adds">电话：<span><strong> 025-58277371 025-85519159</strong></span></p>
+							<p class="adds">地址：南京市浦口区丽景路51号2007-2008室</p>
+							<p class="adds">邮箱：www.puxun111.com</p>
+						</div>
+						<div class="code_pic"> <img src="images/code.png" /> </div>
+						<div class="code_text"> 微信公众号 </div>
+
+					</div>
+				</div>
+				<div class="copy"> Copyright © 2014-2018 puxun111.com 南京普讯管理软件有限公司 版权所有 服务条款 隐私政策 </div>
+			</div>
+			<div class="contact">
+				<div class="callbox"> <span>&#xe606;</span>
+					<div class="call_num"> 400-888-8888 </div>
+				</div>
+				<div class="wxbox"> <span></span>
+					<div class="wxpic"> <img src="images/weixin.png" /> </div>
+				</div>
+				<div class="return"> <span></span>
+
+					<!--<img src="images/return.png"/>-->
+
+				</div>
+			</div>
+		</div>
+		<!--右侧返回顶部-->
+		<script src="js/jquery.nGyroParallax.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$(".pro_ban").mousemove(function(e) {
+					$('#solve1').nGyroParallax({
+						magnification: .005
+					});
+					$('#solve2').nGyroParallax({
+						magnification: .004
+					});
+					$('#solve3').nGyroParallax({
+						magnification: .002
+					});
+				}).mouseleave(function() {
+					$('#solve1').nGyroParallax({
+						magnification: 0
+					});
+					$('#solve2').nGyroParallax({
+						magnification: 0
+					});
+					$('#solve3').nGyroParallax({
+						magnification: 0
+					});
+				})
+			});
+		</script>
+		<script>
+			var pro = function() {
+				var index = 0;
+				var h1 = $('.systebox').offset().top;
+				var h2 = $('.char_box').offset().top;
+				var h3 = $('.kern_box').offset().top;
+				var h4 = $('.app_use').offset().top;
+				var h5 = $('.econ_box').offset().top;
+				$(".main-top span").click(function() {
+					$(this).addClass("active").siblings("span").removeClass("active");
+					index = $(this).index();
+					if (index == 0) {
+						$(".wraps").animate({
+							scrollTop: h1 - 200
+						}, 300);
+					} else if (index == 1) {
+						$(".wraps").animate({
+							scrollTop: h2 - 200
+						}, 300);
+					} else if (index == 2) {
+						$(".wraps").animate({
+							scrollTop: h3 - 200
+						}, 300);
+					} else if (index == 3) {
+						$(".wraps").animate({
+							scrollTop: h4 - 200
+						}, 300);
+					} else if (index == 4) {
+						$(".wraps").animate({
+							scrollTop: h5 - 200
+						}, 300);
+					}
+				})
+				var mahe = $(".main-top").offset().top - 60;
+				$(".wraps").scroll(function() {
+					var he = $(this).scrollTop();
+					if (he < mahe) {
+						$(".main-top").removeClass("active");
+					} else {
+						$(".main-top").addClass("active")
+					}
+					if (he < h1) {
+						$(".main-top span").eq(0).addClass("active").siblings("span").removeClass("active");
+					} else if (he < h2 + 100) {
+						$(".main-top span").eq(1).addClass("active").siblings("span").removeClass("active");
+					} else if (he < h3 + 100) {
+						$(".main-top span").eq(2).addClass("active").siblings("span").removeClass("active");
+					} else if (he < h4 + 100) {
+						$(".main-top span").eq(3).addClass("active").siblings("span").removeClass("active");
+					} else if (he < h5 + 100) {
+						$(".main-top span").eq(4).addClass("active").siblings("span").removeClass("active");
+					}
+				})
+			}
+			pro(); //产品中心切换
+		</script>
+	</body>
+</html>

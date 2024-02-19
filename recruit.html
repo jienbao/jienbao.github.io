@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>TMC智慧消防云平台</title>
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/public.js"></script>
+	</head>
+	<body>
+		<div class="topbox">
+			<div class="head clearfloat" style="width: 1200px;">
+				<div class="logo clearfloat" style="width: 15%;"> <em></em> </div>
+				<div class="nav" style="width: 60%;">
+					<ul class="clearfloat">
+						<li><a href="index.html">首页</a></li>
+						<li><a href="about.html">公司简介</a></li>
+						<li><a href="product1.html">普讯产品</a></li>
+						<li><a href="Solution.html">解决方案 </a>
+							<div class="nav_down">
+								<p><a href="">火灾自动报警系统解决方案</a></p>
+								<p><a href="">电气火灾监控系统解决方案</a></p>
+								<p><a href="">可燃气体监控系统解决方案</a></p>
+								<p><a href="">消防给水监测系统解决方案</a></p>
+								<p><a href="">气体灭火控制系统解决方案</a></p>
+								<p><a href="">防火门监控系统解决方案</a></p>
+								<p><a href="">消防视频监控系统解决方案</a></p>
+								<p><a href="">消防巡检系统解决方案</a></p>
+								<p><a href="">应急疏散系统解决方案</a></p>
+							</div>
+						</li>
+						<li><a href="partners.html">合作伙伴</a></li>
+						<li><a href="contactUs.html">联系我们</a></li>
+						<li class="active"><a href="recruit.html">诚聘英才</a></li>
+
+						<!-- <li><a href="tmc1.html">产品中心</a>
+						<div class="nav_down">
+							<p><a href="tmc1.html">TMC智慧消防云平台</a></p>
+							<p><a href="tmc2.html">TMC智慧消防APP/小程序</a></p>
+							<p><a href="tmc3.html">TMC可视化指挥平台</a></p>
+							<p><a href="hard.html">硬件终端</a></p>
+						</div>
+					</li> -->
+
+					</ul>
+				</div>
+				<div class="login_img" style="">
+					<img src="images/search.png" alt="">
+					<input class="login_input" placeholder="请输入关键字" type="text" style="">
+				</div>
+				<div class="login_peixun" style="">
+					<a style="color: #fff;" href="login.html">登录培训</a>
+				</div>
+			</div>
+		</div>
+		<!--top-->
+		<style>
+			.main {
+				width: 1200px;
+				overflow: hidden;
+				margin: 0 auto;
+			}
+			.fire_name{
+				font-size: 15px;
+			}
+			.pro_ban {
+				/* width: 33.3%; */
+				background: url(images/recruit.png);
+				/* height: 246px; */
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: 100% 100%;
+				height: 320px;
+			}
+
+			.position {
+				color: #fff;
+				height: 315px;
+				display: flex;
+				align-items: end;
+				width: 63%;
+				margin: 0 auto;
+			}
+
+			.fir_use {
+				display: flex;
+				align-items: center;
+			}
+
+			.fir_cut li {
+				cursor: pointer;
+				height: 50px;
+				width: 100%;
+				display: table;
+				line-height: 50px;
+				background-color: #f7f7f7;
+			}
+
+			.fire_tit {
+				/* text-align: center; */
+				margin-bottom: 23px;
+				height: 42px;
+				line-height: 42px;
+				color: rgba(51, 51, 51, 1);
+				font-size: 30px;
+				width: 80%;
+				margin: 0 auto;
+				text-align: inherit;
+			}
+
+			.contacts {
+				display: flex;
+				align-items: center;
+				width: 1200px;
+				margin: 0 auto;
+			}
+
+			.puxun {
+				width: 4px;
+				height: 24px;
+				background-image: linear-gradient(180deg, #0059ED 0%, #0EFFB3 100%);
+			}
+
+			.fire_ban {
+				/* margin: 37px auto 0; */
+				width: 1200px;
+				overflow: hidden;
+				/* height: 443px; */
+				background-color: rgba(255, 255, 255, 1);
+				margin: 30px auto;
+			}
+
+			.post {
+				padding: 4px 18px;
+			}
+			.post.active{
+				background: #FFF2E5;
+				border-radius: 6px;
+			}
+
+			.deta_tit {
+				/* width: 410px; */
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				padding: 5px 8px;
+				border: 1px solid #DFDFDF;
+				border-radius: 6px;
+			}
+
+			.introduce {
+				padding-top: 15px;
+				font-size: 14px;
+				line-height: 26px;
+			}
+			.introduce strong{
+				font-size: 16px;
+			}
+
+			.fieline_boxs {
+				/* padding-top: 52px; */
+				box-sizing: border-box;
+				/* width: 824px; */
+				float: left;
+				margin-left: 40px;
+				/* height: 443px; */
+				/* overflow: hidden; */
+			}
+		</style>
+		<div class="wraps">
+			<div class="pro_ban">
+				<div class="pro_use clearfloat">
+					<div class="pro_le">
+						<div class="position">
+							<div class="" style="display: flex;align-items: center;">
+								<img src="images/current.png" style="width: 20px;height: 20px;" alt="">
+								<div class="" style="padding-left: 10px;">
+									所在位置： 诚聘英才
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--banner-->
+			<!-- <div class="main-top ">
+				<span class="active">四个消防在线</span><span>平台功能</span><span>平台价值</span><span>重点部署场所</span>
+			</div> -->
+			<div class="main">
+				<div class="mearch firebox">
+					<div class="contacts">
+						<div style="width: 210px;display: flex;align-items: center;">
+							<div class="puxun"></div>
+							<div class="fire_tits" style="font-size: 24px;padding-left: 15px;font-weight: 600;">
+								联系普讯
+							</div>
+						</div>
+						<div class="fieline_box">
+							<div class="firline active">
+								<div class="deta_tit" style="display: flex;">
+									<div class="post active"><span>产品经理</span></div>
+									<div class="post"><span>前端工程师</span></div>
+									<div class="post"><span>交互工程师</span></div>
+									<div class="post"><span>后端工程师</span></div>
+									<div class="post"><span>交互工程师</span></div>
+								</div>
+							</div>
+							<div class="firline ">
+								<div class="deta_tit" style="display: flex;">
+									<div class="post"><span>产品经理</span></div>
+									<div class="post"><span>前端工程师</span></div>
+									<div class="post"><span>交互工程师</span></div>
+									<div class="post"><span>后端工程师</span></div>
+								</div>
+							</div>
+							<div class="firline">
+								<div class="deta_tit" style="display: flex;">
+									<div class="post"><span>产品经理</span></div>
+									<div class="post"><span>前端工程师</span></div>
+									<div class="post"><span>交互工程师</span></div>
+								</div>
+							</div>
+							<div class="firline ">
+								<div class="deta_tit" style="display: flex;">
+									<div class="post"><span>产品经理</span></div>
+									<div class="post"><span>前端工程师</span></div>
+								</div>
+							</div>
+							<div class="firline">
+								<div class="deta_tit" style="display: flex;">
+									<div class="post"><span>产品经理</span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="fire_info">
+						“人防、物防、技防”结合应用于传统的城市消防管理和监督，实现四个消防在线。
+					</div> -->
+					<style>
+						.myImage {
+							width: 20px;
+							height: 20px;
+							padding-left: 10px;
+						}
+						.myImage_w{
+							opacity: 0;
+							position: absolute;
+							left: 10px;
+						}
+						.fir_cut li{
+							position: relative;
+						}
+						.fir_cut li.active .myImage{
+							opacity: 0;
+						}
+						.fir_cut li.active .myImage_w{
+							opacity: 1;
+						}
+					</style>
+					<div class="fire_ban clearfloat">
+						<div class="fir_cut">
+							<ul>
+								<li class="active" style="background-color: rgb(255, 123, 0); color: rgb(255, 255, 255);">
+									<div class="fir_use">
+										<!-- &#xe6f8; -->
+										<img id="myImage1" class="myImage" src="images/marketing.png" alt="">
+										<img class="myImage_w" src="images/marketing_up.png" alt="">
+										<div class="img_left"></div>
+										<div class="fire_name">
+											营销管理中心
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="fir_use">
+										<!-- &#xe653; -->
+										<img id="myImage2" class="myImage" src="images/service.png" alt="">
+										<img class="myImage_w" src="images/service_up.png" alt="">
+										<div class="fire_name">
+											服务管理中心
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="fir_use">
+										<!-- &#xe78a; -->
+										<img id="myImage3" class="myImage" src="images/develop.png" alt="">
+										<img class="myImage_w" src="images/develop_up.png" alt="">
+										<div class="fire_name">
+											研发管理中心
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="fir_use">
+										<!-- &#xe78a; -->
+										<img id="myImage4" class="myImage" src="images/comprehensive.png" alt="">
+										<img class="myImage_w" src="images/comprehensive_up.png" alt="">
+										<div class="fire_name">
+											综合管理中心
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="fir_use">
+										<!-- &#xe78a; -->
+										<img id="myImage5" class="myImage" src="images/other.png" alt="">
+										<img class="myImage_w" src="images/other_up.png" alt="">
+										<div class="fire_name">
+											其他部门
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="fieline_boxs">
+							<div class="" style="color: #FF7B00;font-weight: 600;font-size: 18px;margin-bottom: 20px">产品经理</div>
+							<div class="introduce">
+								<strong>岗位职责</strong>
+								<p>1. 制定月度、季度、年度岗位工作计划；</p>
+								<p>2. 收集和分析国内外行业相关产品信息、和市场需求；</p>
+								<p>3. 整理和维护产品相关基础资料；</p>
+								<p>4. 建立标准化的售前售后支持工具体系；</p>
+								<p>5. 建立和执行产品知识培训、传播、认证体系；</p>
+								<p>6. 与相关业务部门横向衔接并提供相应的支持；</p>
+								<p>7. 及时提供售前售后项目的相关支持；</p>
+							</div>
+							<div class="introduce">
+								<strong>岗位要求：</strong>
+								<p>1. 对协同OA知识及其相关产品有自己的理解并能把握方向发展；</p>
+								<p>2. 对协同OA及关联产品在企业、集团公司、事业单位、政府机构的应用熟悉；</p>
+								<p>3. 具备一定的企业管理知识；</p>
+								<p>4. 对协同关联产品的发展敏感；</p>
+							</div>
+							<div class="introduce">
+								<strong>普讯的加入方式：</strong>
+								<p>1.官方网站直接投递简历至：puxun@163.com.cn，邮件标题：岗位+地区+姓名；</p>
+								<p>2.其他招聘网站（boss直聘、51jobs、智联等），简历投递：直接搜索”南京普讯”点击招聘岗位投递即可；</p>
+								<p>3.推荐或者自荐成功，将获得1000元人才推荐奖。</p>
+							</div>
+							<div class="introduce">
+								<strong>联系方式</strong>
+								<p>联系电话：025-58277371 025-85519159；（欢迎扫码关注普讯招聘公众号）</p>
+							</div>
+							<div class="introduce">
+								<img src="images/qrcode.png" alt="">
+							</div>
+						</div>
+						<!-- <div class="fieline_box">
+							<div class="firline active">
+								<div class="deta_tit" style="display: flex;">
+									<div class="post">产品经理</div>
+									<div class="post">前端工程师</div>
+									<div class="post">交互工程师</div>
+									<div class="post">后端工程师</div>
+								</div>
+							</div>
+							<div class="firline ">
+								<div class="deta_tit">
+									<span>产品经理</span>
+									<span>前端工程师</span>
+									<span>交互工程师</span>
+									<span>后端工程师</span>
+								</div>
+
+							</div>
+							<div class="firline">
+								<div class="deta_tit">
+									<span>产品经理</span>
+									<span>前端工程师</span>
+									<span>交互工程师</span>
+									<span>后端工程师</span>
+								</div>
+
+							</div>
+							<div class="firline ">
+								<div class="deta_tit">
+									<span>产品经理</span>
+									<span>前端工程师</span>
+									<span>交互工程师</span>
+									<span>后端工程师</span>
+								</div>
+
+							</div>
+							<div class="firline">
+								<div class="deta_tit">
+									<span>产品经理</span>
+									<span>前端工程师</span>
+									<span>交互工程师</span>
+									<span>后端工程师</span>
+								</div>
+
+							</div>
+						</div> -->
+					</div>
+				</div>
+			</div>
+
+			<div class="footerbox" style="background-image: linear-gradient(180deg, #F7F7F7 0%, #ECECEC 100%);">
+				<div class="fast_navs" style="width: 1200px;margin: 0 auto;">
+					<img src="images/logo1.png" alt="" style="width: 200px;height: 50px;">
+				</div>
+				<div class="footer clearfloat" style="width: 1200px;">
+					<div style="width: 100%;display: flex;padding-top: 20px;">
+						<div class="fast_nav">
+							<div class="fast_tit"> 公司简介 </div>
+							<div class="fast_list">
+								<p><a class="herf_a" href="tmc1.html">公司简介</a></p>
+								<p><a class="herf_a" href="solve.html">视频简介</a></p>
+							</div>
+						</div>
+						<div class="fast_nav">
+							<div class="fast_tit"> 普讯产品 </div>
+							<div class="fast_list">
+								<p><a class="herf_a" href="tmc1.html">钢贸宝</a></p>
+								<p><a class="herf_a" href="solve.html">库准简易版WMS</a></p>
+								<p><a class="herf_a" href="case.html">普讯询报价</a></p>
+							</div>
+						</div>
+						<div class="fast_nav">
+							<div class="fast_tit"> 解决方案 </div>
+							<div class="fast_list">
+								<p><a class="herf_a" href="tmc1.html">生产车间管理</a></p>
+								<p><a class="herf_a" href="solve.html">生产计划管理</a></p>
+								<p><a class="herf_a" href="case.html">质量管理解决方案</a></p>
+								<p><a class="herf_a" href="agent.html">智能仓储解决方案</a></p>
+								<p><a class="herf_a" href="about.html">智能财务解决方案</a></p>
+								<p><a class="herf_a" href="agent.html">智能仓储解决方案</a></p>
+								<p><a class="herf_a" href="about.html">智能财务解决方案</a></p>
+							</div>
+						</div>
+						<div class="fast_nav">
+							<div class="fast_tit"> 合作伙伴 </div>
+							<div class="fast_list">
+								<p><a class="herf_a" href="tmc1.html">普讯伙伴</a></p>
+								<p><a class="herf_a" href="solve.html">普讯伙伴</a></p>
+								<p><a class="herf_a" href="case.html">普讯伙伴</a></p>
+								<p><a class="herf_a" href="agent.html">普讯伙伴</a></p>
+							</div>
+						</div>
+						<div class="fast_navs" style="width: 25%;">
+							<div class="fast_tit"> 联系我们 </div>
+							<div class="fast_list">
+								<p class="adds"><img src="images/telephones.png" />&nbsp;电话：<span><strong> 025-58277371
+											025-85519159</strong></span></p>
+								<p class="adds"><img src="images/address.png" />&nbsp;地址：南京市浦口区丽景路51号2007-2008室</p>
+								<p class="adds"><img src="images/Website.png" />&nbsp;邮箱：www.puxun111.com</p>
+							</div>
+
+						</div>
+						<div class="code_pic"
+							style="display: flex;align-items: flex-start;flex-direction: column;align-items: center;">
+							<img src="images/code.png" style="width: 100px;height: 100px;" />
+							<div class="" style="font-size: 14px;font-weight: 400;padding-top: 8px;">
+								微信扫一扫
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="">
+				<div class="" style="border-top: 1px solid #DDE0E4;margin: 0 auto;width: 1200px;">
+
+				</div>
+				<div class="copy">
+					<span>Copyright © 2014-2018</span>
+					&nbsp;&nbsp;<span>puxun111.com</span>
+					&nbsp;&nbsp;<span>南京普讯管理软件有限公司.</span>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span>版权所有</span>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span>服务条款</span>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span>隐私政策</span>
+					&nbsp;&nbsp;&nbsp;&nbsp;<span>法律声明</span>
+				</div>
+			</div>
+			<div class="contact">
+				<div class="callbox"> <span class="contact_span"></span>
+					<div class="call_num">
+						<div class="tels" style="">
+							<img src="images/telephone.png" alt="" /><span style="color: #04060D;">咨询电话</span>
+						</div>
+						<div class="tele">400-888-8888</div>
+					</div>
+				</div>
+				<div class="wxbox"> <span></span>
+					<div class="wxpic">
+						<div>扫描微信二维码</div>
+						<img src="images/weixin.png" />
+					</div>
+				</div>
+				<div class="return"> <span class="top_up"></span>
+				</div>
+			</div>
+		</div>
+		<!--右侧返回顶部-->
+		<script src="js/jquery.nGyroParallax.js"></script>
+		<script type="text/javascript">
+			var but = document.querySelector('.fire_name');
+			var but = document.getElementsByTagName('li');
+			for (var i = 0; i < but.length; i++) {
+				but[i].onclick = function() {
+					for (var i = 0; i < but.length; i++) {
+						but[i].style.backgroundColor = '';
+						but[i].style.color = '';
+					}
+					this.style.backgroundColor = '#FF7B00';
+					this.style.color = '#fff';
+				}
+			}
+		</script>
+		<script type="text/javascript">
+			$(function() {
+				$(".pro_ban").mousemove(function(e) {
+					$('#good1').nGyroParallax({
+						magnification: .005
+					});
+					$('#good2').nGyroParallax({
+						magnification: .004
+					});
+					$('#good3').nGyroParallax({
+						magnification: .002
+					});
+				}).mouseleave(function() {
+					$('#good1').nGyroParallax({
+						magnification: 0
+					});
+					$('#good2').nGyroParallax({
+						magnification: 0
+					});
+					$('#good3').nGyroParallax({
+						magnification: 0
+					});
+				})
+			});
+		</script>
+	</body>
+</html>

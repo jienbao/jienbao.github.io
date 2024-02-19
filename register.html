@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<meta name="author" content="order by www.adminbuy.cn">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/public.js"></script>
+		<script src="js/raphael.min.js"></script>
+	</head>
+	<style>
+		body {
+			width: 100%;
+			min-width: 1200px;
+			padding-top: 0;
+			position: absolute;
+			height: 100%;
+			overflow: hidden;
+			box-sizing: border-box;
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+
+		.Login {
+			width: 100%;
+			display: flex;
+		}
+
+		.commodity {
+			width: 60%;
+			/* width: 33.3%; */
+			background: url(images/left.png);
+			/* height: 246px; */
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: 100% 100%;
+			height: 780px;
+			/* height: 320px; */
+		}
+
+		/* 	.commodity_img {
+			width: 1150px;
+			height: 780px;
+		} */
+
+		.logos {
+			text-align: center;
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			/* justify-content: center; */
+			padding-top: 55px;
+		}
+
+		.Login {
+			display: flex;
+			justify-content: space-around;
+		}
+
+		.Mobile {
+			margin: 20px 0;
+			width: 430px;
+			height: 48px;
+			background: #FFFFFF;
+			border: 1px solid #C0C7D6;
+			border-radius: 6px;
+		}
+
+		.password {
+			width: 430px;
+			height: 48px;
+			background: #FFFFFF;
+			border: 1px solid #C0C7D6;
+			border-radius: 6px;
+		}
+
+		.agree {
+			margin: 20px auto;
+			width: 430px;
+			text-align: initial;
+		}
+
+		.Forgotpassword {
+			width: 430px;
+			margin: 0 auto;
+			text-align: end;
+			color: #C0C7D6;
+			font-size: 16px;
+			margin-bottom: 25px;
+		}
+
+		.bu_login {
+			width: 430px;
+			margin: 0 auto;
+			height: 48px;
+			line-height: 48px;
+			/* opacity: 0.4; */
+			background: #FF7B00;
+			border-radius: 6px;
+			color: #fff;
+		}
+
+		.refactor-login-modal-form-item.error {
+			/* border-color: #ff3537; */
+		}
+
+		.refactor-login-modal-form-item {
+			position: relative;
+			margin-bottom: 32px;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			height: 48px;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			background: #fff;
+			border: 1px solid #d9d9d9;
+			border-radius: 8px;
+			width: 430px;
+			margin: 0 auto;
+		}
+
+		.form-item-phone>i {
+			/* width: 33.3%; */
+			background: url(images/phone.png);
+			/* height: 246px; */
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: 100% 100%;
+			/* height: 320px; */
+		}
+
+		.form-item-password>i {
+			/* width: 33.3%; */
+			background: url(images/password.png);
+			/* height: 246px; */
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: 100% 100%;
+			/* height: 320px; */
+		}
+
+		.refactor-login-modal-form-item>i {
+			margin: 0 16px;
+			display: block;
+			width: 24px;
+			height: 24px;
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+
+		.refactor-login-modal-form-item>input {
+			display: block;
+			width: calc(100% - 72px);
+			font-size: 14px;
+			line-height: 28px;
+			color: #262626;
+			background-color: inherit;
+		}
+
+		.refactor-login-modal-form-item.error>span {
+			opacity: 1;
+		}
+
+		.refactor-login-modal-form-item>span {
+			position: absolute;
+			display: block;
+			top: 13px;
+			right: 16px;
+			font-size: 14px;
+			line-height: 22px;
+			text-align: right;
+			color: #ff3537;
+			opacity: 0;
+			-webkit-transition: opacity .2s ease-in-out;
+			transition: opacity .2s ease-in-out;
+		}
+
+		body .refactor-login-modal-form-item-inline {
+			width: 430px;
+			display: flex;
+			align-items: center;
+			margin: 0 auto;
+		}
+
+		body .refactor-code {
+			width: 430px;
+			margin: 0 auto;
+		}
+
+		.refactor-login-modal-form-item-inline {
+			margin-bottom: 32px;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+		}
+
+		body .form-item-checkin {
+			padding: 0;
+		}
+
+		.form-item-checkin {
+			position: relative;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			padding: 0 16px;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			cursor: pointer;
+		}
+
+		.form-item-checkin input[type=checkbox] {
+			position: absolute;
+			opacity: 0;
+			pointer-events: none;
+		}
+
+		.form-item-checkin i {
+			margin-right: 16px;
+			display: block;
+			width: 24px;
+			height: 24px;
+			/* background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAMAAADypuvZAAAAM1BMVEUAAADw8PDv7+/v7+/w8PDw8PDv7+/v7+/v7+/w8PDw8PDv7+/x8fH6+vrw8PD29vby8vK6f6zhAAAADXRSTlMA4GCw74BwUBDQr5CPtXtVcAAAAJZJREFUSMft1jsSwyAMRVEJMOAPT+x/tbGSTChBKT26/ZmnDuhdzQdjGh+BRiVhMf6xC+jS5okA2D5mAwaZOeBSE9aNqo5yI7YY3UpVh5qpjkwRYkOCSLsVNTABzYrgyJEjR44cPQexFQn4v4c6o1uvC1QTxHodUYFFiQ7dnQYlGN+wRSYdOOlbYCyWCo1C3OeCY66kvQBZq4Xp9KPrSwAAAABJRU5ErkJggg==); */
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+
+		.form-item-checkin span {
+			font-size: 14px;
+			line-height: 25px;
+			color: #262626;
+		}
+
+		.form-item-checkin input[type=checkbox]:checked~i {
+			background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAMAAADypuvZAAAAYFBMVEUAAAD/kQD/kAD/jwD/kQD/jwD/jwD/jwD/kQD/kQD/kAD/kQD/kQD6+vr/kQD/nh/758v/mBD77dv9zI3805z78+r9xn3+qz79uF3+pC773rf8xXz9sk7/pC79xXz8v23pcFONAAAADXRSTlMA4LBg73BQENCQj4B/Z4gDcwAAASlJREFUSMftltlqhTAURU+iXu/kzqhe7fT/f1kjpQdKmnheCqVd70vJCoRNO32nFaoo3RBzanEQ9aldgTn4oYqNBrjTzh0uDAcJDtfkNHB2OIx1OG2SQhgEBLQ9NTCDiBkdaUSZFKDpDCuTPBQBgxDgX/oBKToTpdIEwMmk8YENI5L8khwXJZI1+3+sJERA4sVL6k1IPEZB8vEZiafCPdn1awLDCb6RJuAtn6AgYWPxmQQladm/67MJ8hKfYM0kKITwMxJTLkEh+SuAlGN1nKAs8eENJ6hJnJkT1CXOwQnqEnfjBDWJcyz2d71Gf0BS8DLHQpFGkEkRmjrMMsmgob6Vjg+VJph05uxD7CIbVDfauQEm2rrhwwxc6ING4SDtiZhGn4/M0a6nxDtcRoluEvDpjwAAAABJRU5ErkJggg==);
+		}
+
+		.form-item-checkin i {
+			margin-right: 5px;
+			display: block;
+			width: 20px;
+			height: 20px;
+			background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAMAAADypuvZAAAAM1BMVEUAAADw8PDv7+/v7+/w8PDw8PDv7+/v7+/v7+/w8PDw8PDv7+/x8fH6+vrw8PD29vby8vK6f6zhAAAADXRSTlMA4GCw74BwUBDQr5CPtXtVcAAAAJZJREFUSMft1jsSwyAMRVEJMOAPT+x/tbGSTChBKT26/ZmnDuhdzQdjGh+BRiVhMf6xC+jS5okA2D5mAwaZOeBSE9aNqo5yI7YY3UpVh5qpjkwRYkOCSLsVNTABzYrgyJEjR44cPQexFQn4v4c6o1uvC1QTxHodUYFFiQ7dnQYlGN+wRSYdOOlbYCyWCo1C3OeCY66kvQBZq4Xp9KPrSwAAAABJRU5ErkJggg==);
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+
+		address,
+		i {
+			font-style: normal;
+		}
+
+		.refactor-login-modal-form-item-inline {
+			margin-bottom: 32px;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+		}
+
+		.form-item-code {
+			margin-bottom: 0;
+			-webkit-box-flex: 1;
+			-ms-flex: 1 1 auto;
+			flex: 1 1 auto;
+		}
+
+		.refactor-login-modal-form-item {
+			position: relative;
+			/* margin-bottom: 32px; */
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			height: 48px;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			background: #fff;
+			border: 1px solid #d9d9d9;
+			border-radius: 8px;
+		}
+
+		.form-item-code>i {
+			background: url(images/codes.png);
+			/* height: 246px; */
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: 100% 100%;
+			/* height: 320px; */
+		}
+
+		.refactor-login-modal-form-item>i {
+			margin: 0 16px;
+			display: block;
+			width: 24px;
+			height: 24px;
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+
+		.refactor-login-modal-form-item>input {
+			display: block;
+			width: calc(100% - 72px);
+			font-size: 14px;
+			line-height: 28px;
+			color: #262626;
+			background-color: inherit;
+		}
+
+		button,
+		input,
+		optgroup,
+		option,
+		select,
+		textarea {
+			font-family: inherit;
+			font-size: inherit;
+			font-style: inherit;
+			font-weight: inherit;
+			outline: 0;
+		}
+
+		.refactor-login-modal-form-item>span {
+			position: absolute;
+			display: block;
+			top: 13px;
+			right: 16px;
+			font-size: 14px;
+			line-height: 22px;
+			text-align: right;
+			color: #ff3537;
+			opacity: 0;
+			-webkit-transition: opacity .2s ease-in-out;
+			transition: opacity .2s ease-in-out;
+		}
+
+		.refactor-login-modal-form-btn.disabled,
+		.refactor-login-modal-form-btn[disabled] {
+			background: #E4E8F2;
+			cursor: default;
+		}
+
+		[disabled] {
+			cursor: default;
+		}
+
+		.form-btn-receive {
+			margin-left: 16px;
+			width: 170px;
+		}
+
+		.refactor-login-modal-form-btn {
+			display: block;
+			height: 48px;
+			/* width: auto; */
+			font-size: 14px;
+			/* color: #fff; */
+			background: #ff9100;
+			border-radius: 8px;
+		}
+
+		button,
+		input,
+		optgroup,
+		option,
+		select,
+		textarea {
+			font-family: inherit;
+			font-size: inherit;
+			font-style: inherit;
+			font-weight: inherit;
+			outline: 0;
+		}
+	</style>
+	<body>
+		<div class="Login">
+			<div class="commodity">
+				<!-- <img class="commodity_img" style="" src="images/left.png" alt=""> -->
+			</div>
+			<div class="" style="display: flex;
+				flex-wrap: wrap;
+				align-content: space-between;width: 40%;">
+				<div class="logos">
+					<div class="" style="text-align: center;margin: 0 auto;">
+						<img style="width: 120px;" src="images/logo.png" alt="">
+					</div>
+					<div class="" style="padding-top: 25px;">
+						<div class="Login">
+							<div class="">
+								注册
+							</div>
+							<div class="">
+								<a style="color:#FF7B00;" href="login.html">立即登录</a>
+							</div>
+						</div>
+						<div class="refactor-login-modal-form-item form-item-phone error" style="margin: 25px auto;">
+							<i></i><input type="text" maxlength="11" placeholder="请输入手机号码" id="refactor-phone-input">
+						</div>
+
+
+						<div class="refactor-login-modal-form-item-inline">
+							<div class="refactor-login-modal-form-item form-item-code"><i></i><input type="text"
+									maxlength="6" placeholder="请输入动态密码" id="refactor-code-input"><span></span></div>
+							<button id="refactor-code-click"
+								class="refactor-login-modal-form-btn form-btn-receive ibaotu-md-click"
+								ibaotu-md-name="pop_up" ibaotu-md-value="new_captcha" disabled="">获取验证码</button>
+						</div>
+
+
+
+						<div class="refactor-login-modal-form-item form-item-password error" style="margin: 25px auto;">
+							<i></i><input type="text" placeholder="8-18位含字母、数字和特殊字符的密码" id="refactor-phone-input">
+						</div>
+						<div class="refactor-login-modal-form-item form-item-password error"><i></i><input type="text"
+								placeholder="请再次输入设置的密码" id="refactor-phone-input"></div>
+						<div class="refactor-login-modal-form-item-inline refactor-code" style="margin: 25px auto 50px;">
+							<label class="form-item-checkin"><input type="checkbox" id="remember"
+									checked=""><i></i><span>我同意</span><span style="color: #2988FC;"> 《 普讯用户使用协议 》
+								</span></label>
+							<p class="form-text-warn"></p>
+						</div>
+						<div class="Forgotpassword">
+							<!-- 忘记密码 -->
+						</div>
+						<div class="bu_login">
+							注册普讯账号
+						</div>
+					</div>
+				</div>
+				<div class="" style="width: 100%;margin: 0 auto;text-align: center;">
+					Copyright © 2014-2018 puxun111.com 苏ICP备15025459号 用户协议
+				</div>
+			</div>
+
+		</div>
+
+	</body>
+</html>

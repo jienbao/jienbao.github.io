@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+       .nav {
+        list-style: none;
+       }
+       li{
+        color: skyblue;
+       }
+       div{
+        display: none;
+       }
+    </style>
+</head>
+<body>
+<ul>
+    <li id="lis" class="lis">
+        <a id="link" href="#">微博</a>
+    <ul id="ul1">
+        <li>私信</li>
+        <li>评论</li>
+        <li>@我</li>
+    </ul>
+  </li>
+</ul>
+    <script>
+        window.onload = function (){
+             
+            var li = document.getElementById('lis');
+            var ul = document.getElementById('ul1');
+            var a = document.getElementById('link');
+             
+            li.onmouseover = function (){
+                ul.style.display = 'block';
+                a.style.background = 'yellow';
+            };
+            li.onmouseout = function hide(){
+                ul.style.display = 'none';
+                a.style.background = '#f1f1f1';
+            };
+             
+        };
+    </script>
+</body>
+</html>
